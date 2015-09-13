@@ -1,0 +1,26 @@
+{
+  "name": "akx.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akx/akx.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akx/akx.github.io/issues"
+  },
+  "homepage": "https://github.com/akx/akx.github.io#readme",
+  "dependencies": {
+    "jade": "^1.11.0",
+    "marked": "^0.3.5",
+    "merge": "^1.2.0",
+    "meta-marked": "^0.3.3"
+  }
+}
