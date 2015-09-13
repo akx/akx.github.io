@@ -66,8 +66,7 @@ A web MIDI arpeggiator/step sequencer.
 Some libre notification sounds.
 
 * 4/2014
-* Online: http://akx.github.io/arpy
-* Repo: https://github.com/akx/arpy
+* Repo: https://github.com/akx/Notifications
 
 ### python-portmidi
 
