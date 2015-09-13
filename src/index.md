@@ -58,7 +58,7 @@ A web MIDI arpeggiator/step sequencer.
 
 * JavaScript
 * 5/2014
-* Online: http://akx.github.io/arpy
+* Online: http://akx.github.io/arpy/arpy.html
 * Repo: https://github.com/akx/arpy
 
 ### Notifications

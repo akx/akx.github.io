@@ -1,12 +1,17 @@
+var CleanCSS = require('clean-css');
 var fs = require("fs");
 var jade = require("jade");
 var merge = require("merge");
 var metaMarked = require("meta-marked");
+var minify = require('html-minifier').minify;
 var path = require("path");
 
 var srcPath = "src";
 var outputPath = ".";
 
+jade.filters.css = function(source) {
+	return new CleanCSS().minify(source).styles;
+};
 
 var templates = {};
 function getTemplate(filename, callback) {
@@ -38,7 +43,11 @@ function build(filename) {
 		meta.slug = baseExt;
 		meta.outputName = path.join(outputPath, baseExt + ".html");
 		getTemplate(meta.template, function(template) {
-			var output = template(merge({content: html}, meta));
+			var output = minify(template(merge({content: html}, meta)), {
+				collapseWhitespace: true,
+				removeAttributeQuotes: true,
+				removeRedundantAttributes: true
+			});
 			fs.writeFile(meta.outputName, output, "utf8", function(err) {
 				if(err) throw err;
 				console.log("[+]", meta.path, "->", meta.outputName);
