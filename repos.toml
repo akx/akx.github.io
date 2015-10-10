@@ -1,0 +1,379 @@
+[banny]
+[bytebeat]
+[defiler]
+[django-cee-proto]
+[dxv3]
+[farr_tinyev]
+[glitch]
+[hjum]
+[html5-cheatsheet]
+[leveldb-test]
+[listeningclub]
+[markdown-cheatsheet-fi]
+[mess]
+[michelle]
+[nocheese]
+[pentu]
+[poco]
+[rust-glitch]
+[shoop-checkoutfi]
+[shoop-pugme]
+[spi]
+[stackspy]
+[supersample]
+[twitter-swagger-api-defs]
+[ubuntu-gdk-pixbuf-pkg-bug]
+[vw]
+[yodel]
+[dish]
+[svgmap-to-imagemap]
+[vagrant-ubuntu-core]
+
+[foamy]
+description = "Simpler SOAP for Python."
+url = 'https://github.com/akx/foamy'
+language = 'Python'
+date = '2012-09-07'
+category = 'Libraries'
+status = 'Incomplete'
+
+
+[Notifications]
+description = "Some libre notification sounds."
+url = 'https://github.com/akx/Notifications'
+date = '2013-02 (and subsequent updates)'
+category = 'Audio'
+
+[noisykeys]
+description = "A little C# app that mutes microphones when noisy keyboards are abound."
+url = 'https://github.com/akx/noisykeys'
+language = 'C#'
+platform = "Windows"
+date = '2013-03-18'
+category = 'Audio'
+
+[python-portmidi]
+description = "Some MIDI/OSC stuff"
+url = 'https://github.com/akx/python-portmidi'
+language = 'Python'
+date = '2013-05-14'
+category = 'Audio'
+
+[requiem]
+description = "Silliest Debian/Ubuntu provisioning toolkit"
+url = 'https://github.com/akx/requiem'
+language = 'Python'
+date = '2013-09-06'
+category = 'Utilities'
+
+[stateside]
+description = "Layer comps for HTML."
+url = 'https://github.com/akx/stateside'
+language = 'JavaScript'
+date = '2013-10-21'
+category = 'Webdev'
+
+[spotify-tools]
+description = ""
+url = 'https://github.com/akx/spotify-tools'
+language = 'Python'
+date = '2014-01-12'
+category = 'Audio'
+
+[hayes]
+description = "Simpler Elasticsearch (for Django, and otherwise)"
+url = 'https://github.com/akx/hayes'
+language = 'Python/Django'
+date = '2014-01-23'
+category = 'Webdev'
+
+[djembe]
+description = "Django template toy environment (for learning!)"
+url = 'https://github.com/akx/djembe'
+language = 'Python/Django'
+date = '2014-01-23'
+category = 'Webdev'
+
+[Remote]
+description = "Remote system session manager for Windows"
+url = 'https://github.com/akx/Remote'
+language = 'C#'
+date = '2014-01-24'
+category = 'Utilities'
+
+[bro-py]
+description = "Unofficial Bropages.org Python client"
+homepage = 'http://bropages.org/'
+url = 'https://github.com/akx/bro-py'
+language = 'Python'
+date = '2014-01-25'
+category = 'Utilities'
+
+[ant1gravity-hearthstone-tier-lists]
+description = "Parses Ant1gravity's Hearthstone tier list spreadsheets into a more greppable form."
+url = 'https://github.com/akx/ant1gravity-hearthstone-tier-lists'
+language = 'Python'
+date = '2014-02-09'
+category = 'Data'
+
+[arpy]
+description = "A Web MIDI arpeggiator/step sequencer thing."
+url = 'https://github.com/akx/arpy'
+homepage = 'http://akx.github.io/arpy/arpy.html'
+language = 'JavaScript'
+date = '2014-05-04'
+category = 'Audio'
+
+[minigradient-js]
+description = "Mini-library for gradient interpolation"
+url = 'https://github.com/akx/minigradient.js'
+language = 'JavaScript'
+date = '2014-05-15'
+category = 'Libraries'
+
+[ix]
+description = "Stack-based image processing toy language"
+url = 'https://github.com/akx/ix'
+language = 'JavaScript'
+date = '2014-06-17'
+category = 'Graphics'
+
+[gravelly-js]
+description = "Object-oriented API for generating SVG path strings"
+url = 'https://github.com/akx/gravelly.js'
+language = 'JavaScript'
+date = '2014-07-16'
+category = 'Libraries'
+
+[git-kit]
+description = "Some extension commands for git"
+url = 'https://github.com/akx/git-kit'
+language = 'Python'
+date = '2014-07-28'
+category = 'Utilities'
+
+[stk-js]
+description = "Hand-transforming the Synthesis ToolKit to JavaScript."
+url = 'https://github.com/akx/stk.js'
+language = 'JavaScript'
+date = '2014-07-29'
+category = 'Audio'
+
+[duplica]
+description = "A fast file duplicate finder in C#"
+url = 'https://github.com/akx/duplica'
+language = 'C#'
+date = '2014-08-30'
+category = 'Utilities'
+
+[EFFTHATNOISE]
+description = "A bytebeat livecoding environment."
+homepage = 'http://akx.github.io/EFFTHATNOISE/'
+url = 'https://github.com/akx/EFFTHATNOISE'
+language = 'JavaScript'
+date = '2014-09-04'
+category = 'Audio'
+
+[bk-suomi-menu]
+description = "A menu for a fast food chain that only serves their menus as images."
+homepage = 'http://akx.github.io/bk-suomi-menu/'
+url = 'https://github.com/akx/bk-suomi-menu'
+language = 'JavaScript'
+date = '2014-10-01'
+category = 'Data'
+
+[glitch2]
+description = "HTML5 Canvas glitch effect generator"
+homepage = 'http://akx.github.io/glitch2/'
+url = 'https://github.com/akx/glitch2'
+language = 'JavaScript'
+date = '2014-12-27'
+category = 'Graphics'
+
+[picotable]
+description = "Tiny, fast data grid built on Mithril.js"
+url = 'https://github.com/akx/picotable'
+language = 'JavaScript'
+date = '2015-02-20'
+category = 'Webdev'
+
+[unimap]
+description = "An Unicode map in the browser!"
+homepage = 'http://akx.github.io/unimap/unimap.html'
+url = 'https://github.com/akx/unimap'
+language = 'JavaScript'
+date = '2015-03-26'
+category = 'Utilities'
+
+[smh]
+description = "just a little file-watcher-child-process-reloader."
+url = 'https://github.com/akx/smh'
+language = 'JavaScript'
+date = '2015-04-02'
+category = 'Utilities'
+
+
+
+[dot3k-c]
+description = "A C library for Pimoroni's Display-O-Tron 3000"
+url = 'https://github.com/akx/dot3k-c'
+language = 'C'
+date = '2015-04-16'
+category = 'Libraries'
+
+
+[caldera]
+description = "Utilities for distilling data from the Unicode CLDR"
+url = 'https://github.com/akx/caldera'
+language = 'Python'
+date = '2015-04-30'
+category = 'Utilities'
+
+[band-stars]
+description = "Band Stars Data"
+homepage = 'http://akx.github.io/band-stars/'
+url = 'https://github.com/akx/band-stars'
+language = 'JavaScript'
+date = '2015-05-09'
+category = 'Data'
+
+[license-grep]
+description = "Figure out licenses for the current Python/NPM/Bower environment"
+url = 'https://github.com/akx/license-grep'
+language = 'Python'
+date = '2015-06-02'
+category = 'Utilities'
+
+[slacktrack]
+description = "Lazy Slack archiver"
+url = 'https://github.com/akx/slacktrack'
+language = 'JavaScript'
+date = '2015-06-09'
+category = 'Other stuff'
+
+
+[tcd]
+name = "tcd (aka tiny colorful dots)"
+description = "Tiny Colorful Dots - a simple, small, fast light color picker"
+url = 'https://github.com/akx/tcd'
+language = 'C#'
+platform = "Windows"
+download = "https://github.com/akx/tcd/releases/latest"
+date = '2015-07-05'
+category = 'Utilities'
+
+
+[tune2youtube]
+description = "Converts music to video with cover art, ready to upload to YouTube."
+url = 'https://github.com/akx/tune2youtube'
+language = 'Python'
+date = '2015-07-13 (cleaned from older sources)'
+category = 'Audio'
+
+[maskin]
+description = "A cross-modulating synth sequencer toy."
+homepage = 'http://akx.github.io/maskin/'
+url = 'https://github.com/akx/maskin'
+language = 'JavaScript'
+date = '2015-07-14'
+category = 'Audio'
+
+[GRL-LaserTag]
+description = "Graffiti Research Labs' LASER Tag, with updates"
+url = 'https://github.com/akx/GRL-LaserTag'
+language = 'C'
+date = '2015-07-23'
+category = 'Graphics'
+
+[ltag]
+description = """
+Laser graffiti ([L.A.S.E.R. Tag](http://www.graffitiresearchlab.com/blog/projects/laser-tag/)) software.
+
+Built out of frustration with the architecture and performance of the GRL's software.
+
+Includes support for single-touch TUIO input in addition to built-in OpenCV blob tracking.
+"""
+download = "https://github.com/akx/ltag/releases/latest"
+url = 'https://github.com/akx/ltag'
+language = 'C#'
+date = '2015-07-26'
+category = 'Graphics'
+
+
+[slack-topical]
+description = "Topic-augmenting bot for Slack"
+url = 'https://github.com/akx/slack-topical'
+language = 'JavaScript'
+date = '2015-08-13'
+category = 'Other stuff'
+
+[geoseq]
+description = "Geometry-based web audio sequencer"
+homepage = 'http://akx.github.io/geoseq/'
+url = 'https://github.com/akx/geoseq'
+language = 'JavaScript'
+date = '2015-09-06'
+category = 'Audio'
+
+
+[npdeck]
+description = """
+Extract "Now playing" from Winamp/Foobar2000 into text files and/or images.
+
+Built for OBS-Studio, but could be useful for other uses.
+"""
+url = 'https://github.com/akx/npdeck'
+language = 'C#/WPF'
+platform = "Windows"
+date = '2015-09-20'
+category = 'Utilities'
+
+[fxfxfx]
+description = "Old-skool noise/sound effect generator for Windows"
+url = 'https://github.com/akx/fxfxfx'
+download = 'https://github.com/akx/fxfxfx/releases/latest'
+platform = 'Windows'
+language = 'C#'
+date = '2010-10'
+category = 'Audio'
+
+[chopshop]
+description = "Chops WAV files into slices of equal count or duration"
+url = 'https://github.com/akx/chopshop'
+download = 'https://github.com/akx/chopshop/releases/latest'
+platform = 'Windows'
+language = 'C#'
+date = '2010-04'
+category = 'Audio'
+
+[qta]
+description = "Pretty particle chamber simulation (Windows)"
+url = 'https://github.com/akx/qta'
+download = 'https://github.com/akx/qta/releases/latest'
+language = 'C#'
+platform = "Windows"
+date = '2009-12'
+category = 'Graphics'
+
+[cosmicdrone]
+description = "Subtly oscillating drone machine."
+homepage = 'http://akx.github.io/cosmicdrone'
+url = 'https://github.com/akx/cosmicdrone'
+language = 'JavaScript'
+date = '2015-10-08'
+category = 'Audio'
+
+[reascale-js]
+description = "Reads Reascale files, outputs JavaScript. Built as a dependency of Chromon."
+url = 'https://github.com/akx/reascale-js'
+language = 'JavaScript'
+date = '2015-10-10'
+category = 'Audio'
+
+[chromon]
+description = "Stochastic scale-based sequencing with a sampler"
+homepage = 'http://akx.github.io/chromon'
+url = 'https://github.com/akx/chromon'
+language = 'JavaScript'
+date = '2015-10-10'
+category = 'Audio'

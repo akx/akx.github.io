@@ -4,6 +4,7 @@ var jade = require("jade");
 var merge = require("merge");
 var metaMarked = require("meta-marked");
 var minify = require('html-minifier').minify;
+var _ = require("lodash");
 var path = require("path");
 
 var srcPath = "src";
@@ -28,11 +29,24 @@ function getTemplate(filename, callback) {
 	});
 }
 
+function getEnv(filename) {
+	return {
+		filename: filename,
+		reposMarkdown: function() {
+			return require("./toml-to-markdown")();
+		}
+	};
+}
+
 function build(filename) {
 	fs.readFile(filename, "UTF-8", function(err, content) {
 		var basename = path.basename(filename);
 		var baseExt = path.basename(filename, path.extname(filename));
-		var meta = {}, html = content;
+		var meta = {}, html;
+		if(content.indexOf("<%") > -1) {
+			content = _.template(content)(getEnv(filename));
+		}
+		html = content;
 		if(/md$/.test(filename)) {
 			var result = metaMarked(content);
 			meta = result.meta || {};
