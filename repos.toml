@@ -377,3 +377,58 @@ url = 'https://github.com/akx/chromon'
 language = 'JavaScript'
 date = '2015-10-10'
 category = 'Audio'
+
+[islands]
+description = "JavaScript island map generator (circa 2013)"
+url = 'https://github.com/akx/islands'
+language = 'JavaScript'
+date = '2013'
+category = 'Graphics'
+
+[peep]
+description = """
+What if you could only see just a little bit of the web?
+
+A bookmarklet I made for a friend who was working with visually impaired people,
+with the idea that you could show how hard it is to navigate the Internet if you can
+only see a tiny bit of each page.
+"""
+homepage = 'http://akx.github.io/peep'
+url = 'https://github.com/akx/peep'
+language = 'HTML'
+date = '2011'
+category = 'Other stuff'
+
+[mashed]
+description = "Full screen JPEG glitch"
+homepage = 'http://akx.github.io/mashed'
+url = 'https://github.com/akx/mashed'
+language = 'JavaScript'
+date = '2013'
+category = 'Graphics'
+
+[circgen]
+description = "\"Circuit\" image generator I once wrote for a friend."
+homepage = 'http://akx.github.io/circgen'
+url = 'https://github.com/akx/circgen'
+language = 'JavaScript'
+date = '2015-10-14'
+category = 'Graphics'
+
+[lauo]
+description = "Incomplete yet functional fast file launcher (like Launchy) for Windows"
+url = 'https://github.com/akx/lauo'
+language = 'C#'
+platform = 'Windows'
+date = '2012'
+category = 'Utilities'
+
+[evotd]
+description = "EvoTD, my contribution to Ludum Dare 24 (2012)"
+homepage = 'http://akx.github.io/evotd'
+url = 'https://github.com/akx/evotd'
+language = 'JavaScript'
+date = '2012'
+category = 'Games'
+
+
