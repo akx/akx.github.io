@@ -134,6 +134,7 @@ category = 'Libraries'
 [ix]
 description = "Stack-based image processing toy language"
 url = 'https://github.com/akx/ix'
+homepage = 'http://akx.github.io/ix'
 language = 'JavaScript'
 date = '2014-06-17'
 category = 'Graphics'
