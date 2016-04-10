@@ -7,8 +7,8 @@ var minify = require('html-minifier').minify;
 var _ = require("lodash");
 var path = require("path");
 
-var srcPath = "src";
-var outputPath = ".";
+var srcPath = path.normalize(path.join(__dirname, "..", "content"));
+var outputPath = path.normalize(path.join(__dirname, ".."));
 
 jade.filters.css = function(source) {
 	return new CleanCSS().minify(source).styles;
@@ -33,7 +33,8 @@ function getEnv(filename) {
 	return {
 		filename: filename,
 		reposMarkdown: function() {
-			return require("./toml-to-markdown")();
+			var data = fs.readFileSync(path.join(srcPath, "repos.toml"), "UTF-8");
+			return require("./toml-to-markdown")(data);
 		}
 	};
 }
@@ -72,5 +73,5 @@ function build(filename) {
 
 fs.readdir(srcPath, function (err, files) {
 	if(err) throw err;
-	files.map(function(f) { return path.join(srcPath, f); }).forEach(build);
+	files.filter(function(f) { return /\.md$/.test(f); }).map(function(f) { return path.join(srcPath, f); }).forEach(build);
 });

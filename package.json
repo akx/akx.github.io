@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "node build.js"
+    "build": "node src/build.js"
   },
   "repository": {
     "type": "git",
@@ -20,13 +20,17 @@
   "dependencies": {
     "clean-css": "^3.4.1",
     "github": "^0.2.4",
-    "html-minifier": "^0.7.2",
+    "html-minifier": "^1.5.0",
     "jade": "^1.11.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.9.0",
     "marked": "^0.3.5",
     "merge": "^1.2.0",
-    "meta-marked": "^0.3.3",
+    "meta-marked": "^0.4.1",
     "sprintf-js": "^1.0.3",
     "toml": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^6.2.0"
   }
 }

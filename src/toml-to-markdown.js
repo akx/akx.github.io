@@ -3,14 +3,11 @@ var _ = require("lodash");
 var w = require("./wb")();
 
 function formatRepoData(tomlData) {
-	if(tomlData === undefined) {
-		var fs = require("fs");
-		tomlData = toml.parse(fs.readFileSync("repos.toml", "UTF-8"));
-	}
-	_.forEach(tomlData, function(obj, name) {
+	var data = toml.parse(tomlData);
+	_.forEach(data, function(obj, name) {
 		obj.name = obj.name || name;
 	});
-	var repos = _(tomlData).values().filter(function(obj) { return !!obj.category; }).sortBy("date").value();
+	var repos = _(data).values().filter(function(obj) { return !!obj.category; }).sortBy("date").value();
 	var categories = _.groupBy(repos, "category");
 	_.keys(categories).sort().forEach(function(category) {
 		w("## %s\n\n", category);
@@ -33,7 +30,3 @@ function formatRepoData(tomlData) {
 }
 
 module.exports = formatRepoData;
-
-if(require.main === module) {
-	console.log(formatRepoData());
-}
