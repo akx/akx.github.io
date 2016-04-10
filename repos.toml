@@ -28,6 +28,9 @@
 [dish]
 [svgmap-to-imagemap]
 [vagrant-ubuntu-core]
+[config]
+[ansible-test]
+[project-timeline]
 
 [foamy]
 description = "Simpler SOAP for Python."
@@ -432,4 +435,67 @@ language = 'JavaScript'
 date = '2012'
 category = 'Games'
 
+[xerador]
+description = "A name generator"
+homepage = 'http://akx.github.io/xerador'
+url = 'https://github.com/akx/xerador'
+language = 'JavaScript'
+date = '2015-11-01'
+category = 'Other stuff'
 
+[abyss]
+description = "A statistical profiler and flamechart generator for Python"
+url = 'https://github.com/akx/abyss'
+language = 'Python'
+date = '2015-12-15'
+category = 'Development'
+
+[pytest-repeat]
+description = "Repeat py.tests."
+url = 'https://github.com/akx/pytest-repeat'
+language = 'Python'
+date = '2015-12-29'
+category = 'Development'
+
+[nutritious]
+description = "Normalized nutrition data"
+url = 'https://github.com/akx/nutritious'
+language = 'JavaScript'
+date = '2016-01-10'
+category = 'Data'
+
+[mklocale]
+description = "A small utility to download and combine translations"
+url = 'https://github.com/akx/mklocale'
+language = 'Python'
+date = '2016-02-03'
+category = 'Development'
+
+[ttf-embed]
+description = "A fork of Tom7's ttf-embed"
+homepage = 'http://carnage-melon.tom7.org/embed/'
+url = 'https://github.com/akx/ttf-embed'
+language = 'C'
+date = '2016-02-18'
+category = 'Utilities'
+
+[d2d]
+description = "Data-to-Data transformer tool"
+url = 'https://github.com/akx/d2d'
+language = 'JavaScript'
+date = '2016-04-01'
+category = 'Development'
+
+[touchy]
+description = "Node.js server to translate OSX touchpad data to web sockets"
+url = 'https://github.com/akx/touchy'
+language = 'JavaScript'
+date = '2016-04-02'
+category = 'Other stuff'
+
+[diskbunny]
+description = "A :rabbit: for your :file_folder:"
+url = 'https://github.com/akx/diskbunny'
+language = 'JavaScript'
+date = '2016-04-10'
+category = 'Other stuff'
