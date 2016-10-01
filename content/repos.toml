@@ -499,3 +499,94 @@ url = 'https://github.com/akx/diskbunny'
 language = 'JavaScript'
 date = '2016-04-10'
 category = 'Other stuff'
+
+[umbra]
+
+[homekit]
+description = "Backend & frontend for a tablet-based home \"automation\" display"
+url = 'https://github.com/akx/homekit'
+language = 'JavaScript'
+date = '2016-05-08'
+category = 'IoT'
+
+[mixdesk]
+description = "Electron-based Mixcloud.com client"
+url = 'https://github.com/akx/mixdesk'
+language = 'JavaScript'
+date = '2016-05-13'
+category = 'Utilities'
+
+[redwall]
+description = "Download wallpapers from Reddit"
+url = 'https://github.com/akx/redwall'
+language = 'JavaScript'
+date = '2016-05-31'
+category = 'Utilities'
+
+[iotlog]
+description = "Tiny HTTP IoT data logger"
+url = 'https://github.com/akx/iotlog'
+language = 'JavaScript'
+date = '2016-06-18'
+category = 'IoT'
+
+[foofdf]
+description = "Simple tool to fill PDF forms based on FDF/XFDF/JSON"
+url = 'https://github.com/akx/foofdf'
+language = 'Java'
+date = '2016-06-22'
+category = 'Development'
+
+[pizzeriat]
+description = "Data about Finnish pizzerias"
+url = 'https://github.com/akx/pizzeriat'
+language = 'Python'
+date = '2016-08-14'
+category = 'Other stuff'
+
+[docker-mapnik]
+description = "Mapnik Docker container with Node and Python bindings"
+url = 'https://github.com/akx/docker-mapnik'
+language = 'Shell'
+date = '2016-08-22'
+category = 'Development'
+
+[mlog]
+
+[django-i18nkit]
+description = "Making Django internationalization a little easier"
+url = 'https://github.com/akx/django-i18nkit'
+language = 'Python'
+date = '2016-08-29'
+category = 'Development'
+
+[django-soft-choice-fields]
+description = "Choice fields that don't record the actual choices lists in migrations."
+url = 'https://github.com/akx/django-soft-choice-fields'
+language = 'Python'
+date = '2016-09-12'
+category = 'Development'
+
+[espy]
+description = "Elasticsearch introspection utility"
+url = 'https://github.com/akx/espy'
+language = 'Python'
+date = '2016-09-16'
+category = 'Development'
+
+[pyttipannu]
+description = "Simple recipe aggregator project used for an internal training at Anders."
+url = 'https://github.com/akx/pyttipannu'
+language = 'Python'
+date = '2016-09-23'
+category = 'Development'
+
+[my-video]
+description = "Dynamic kinetic typography video for Childish Gambino's Put It In My Video"
+homepage = 'https://akx.github.io/my-video'
+url = 'https://github.com/akx/my-video'
+language = 'JavaScript'
+date = '2016-10-01'
+category = 'Graphics'
+
+

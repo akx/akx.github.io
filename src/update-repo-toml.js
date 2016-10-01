@@ -4,7 +4,7 @@ var toml = require('toml');
 var _ = require('lodash');
 
 var repoData = JSON.parse(fs.readFileSync('repos.json', 'UTF-8'));
-var tomlData = toml.parse(fs.readFileSync('repos.toml', 'UTF-8'));
+var tomlData = toml.parse(fs.readFileSync('../content/repos.toml', 'UTF-8'));
 var newRepos = _.sortBy(repoData.filter(function (repo) {
   var id = repo.name.replace('.', '-');
   if (repo.fork) return false;
