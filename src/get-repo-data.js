@@ -13,13 +13,13 @@ function complete() {
 }
 function getPage() {
   console.log('...', page);
-  gh.repos.getFromUser({
-    user: 'akx',
+  gh.repos.getForUser({
+    username: 'akx',
     page: page,
     per_page: 100,
   }, function (err, res) {
-    repos = repos.concat(res);
-    if (res.length > 0) {
+    repos = repos.concat(res.data);
+    if (res.data.length > 0) {
       page++;
       getPage();
     } else {

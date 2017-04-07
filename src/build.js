@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 var CleanCSS = require('clean-css');
 var fs = require('fs');
-var jade = require('jade');
+var pug = require('pug');
 var merge = require('merge');
 var metaMarked = require('meta-marked');
 var minify = require('html-minifier').minify;
@@ -11,7 +11,7 @@ var path = require('path');
 var srcPath = path.normalize(path.join(__dirname, '..', 'content'));
 var outputPath = path.normalize(path.join(__dirname, '..'));
 
-jade.filters.css = function (source) {
+pug.filters.css = function (source) {
   return new CleanCSS().minify(source).styles;
 };
 
@@ -21,10 +21,10 @@ function getTemplate(filename, callback) {
     callback(templates[filename]);
     return;
   }
-  var templatePath = path.join('templates', filename || 'default.jade');
+  var templatePath = path.join('templates', filename || 'default.pug');
   fs.readFile(templatePath, 'UTF-8', function (err, text) {
     if (err) throw err;
-    var template = jade.compile(text, {filename: templatePath});
+    var template = pug.compile(text, {filename: templatePath});
     templates[filename] = template;
     callback(template);
   });
