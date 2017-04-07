@@ -589,4 +589,108 @@ language = 'JavaScript'
 date = '2016-10-01'
 category = 'Graphics'
 
+[glmr]
+description = "Canvas trails/drawing hack."
+homepage = 'https://akx.github.io/glmr/'
+url = 'https://github.com/akx/glmr'
+language = 'HTML'
+date = '2011-11'
+category = 'Graphics'
+
+[tritri]
+description = "Kinetic triangles in SVG"
+homepage = [
+    'https://akx.github.io/tritri/tritri.html',
+    'https://akx.github.io/tritri/tritri2.html',
+    'https://akx.github.io/tritri/tritr3.html'
+   ]
+url = 'https://github.com/akx/tritri'
+language = 'JavaScript'
+date = '2014-07'
+category = 'Graphics'
+
+[runway]
+description = "Declarative budgeting"
+url = 'https://github.com/akx/runway'
+language = 'JavaScript'
+date = '2016-10-10'
+category = 'Other stuff'
+
+[reddit-tv]
+description = "Infinite distraction, powered by /r/youtubehaiku"
+homepage = 'https://akx.github.io/reddit-tv'
+url = 'https://github.com/akx/reddit-tv'
+language = 'JavaScript'
+date = '2016-10-10'
+category = 'Internet'
+
+[uni]
+description = "Unicode map on the command line!"
+url = 'https://github.com/akx/uni'
+language = 'Python'
+date = '2016-10-27'
+category = 'Other stuff'
+
+[neki]
+
+[words]
+description = "A word finder."
+homepage = 'https://akx.github.io/words/'
+url = 'https://github.com/akx/words'
+language = 'JavaScript'
+date = '2016-11-12'
+category = 'Games'
+
+[veryloudsite]
+description = "#radix_challenge hack for Junction 2016"
+homepage = 'http://veryloud.site/'
+url = 'https://github.com/akx/veryloudsite'
+language = 'CSS'
+date = '2016-11-26'
+category = 'Audio'
+
+[nodemuki]
+
+[sshw]
+description = "Goodifying terminals for SSH!"
+url = 'https://github.com/akx/sshw'
+language = 'Python'
+date = '2017-02-01'
+category = 'Other stuff'
+
+[summarize-sync-io]
+description = "Summarize Node.js --trace-sync-io logs"
+url = 'https://github.com/akx/summarize-sync-io'
+language = 'JavaScript'
+date = '2017-02-10'
+category = 'Other stuff'
+
+[rahe]
+description = "Retrospective personal budgeting"
+url = 'https://github.com/akx/rahe'
+language = 'JavaScript'
+date = '2017-02-23'
+category = 'Other stuff'
+
+[gifify]
+description = "A tiny Python script for making high-quality GIFs out of videos."
+url = 'https://github.com/akx/gifify'
+language = 'Python'
+date = '2017-03-13'
+category = 'Graphics'
+
+[tinydynip]
+description = "Yet another DynIP updater"
+url = 'https://github.com/akx/tinydynip'
+language = 'Python'
+date = '2017-03-15'
+category = 'Other stuff'
+
+[webpack-css-bundle-example]
+description = "Webpack2 multiple entrypoint CSS extraction example for Koodiklinikka"
+url = 'https://github.com/akx/webpack-css-bundle-example'
+language = 'JavaScript'
+date = '2017-04-04'
+category = 'Other stuff'
+
 
