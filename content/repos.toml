@@ -694,3 +694,92 @@ date = '2017-04-04'
 category = 'Other stuff'
 
 
+[yle-kuntavaalit-2017-data]
+description = "Data about the 2017 Finnish municipal elections, scraped from yle.fi"
+url = 'https://github.com/akx/yle-kuntavaalit-2017-data'
+language = 'Python'
+date = '2017-04-09'
+category = 'Other stuff'
+
+[docker-chrome-dev]
+description = "Headless Google Chrome! In a container! On a whale!"
+url = 'https://github.com/akx/docker-chrome-dev'
+language = 'Docker'
+date = '2017-04-18'
+category = 'Other stuff'
+
+[rd]
+description = "Reddit downloader/video link detector"
+url = 'https://github.com/akx/rd'
+language = 'Python'
+date = '2017-04-21'
+category = 'Web'
+
+[funfun]
+description = "Easing function generator and visualizer"
+homepage = 'https://akx.github.io/funfun/'
+url = 'https://github.com/akx/funfun'
+language = 'JavaScript'
+date = '2017-04-21'
+category = 'Tools'
+
+[demystifying-webpack]
+description = "Demystifying Webpack – presentation & code"
+homepage = 'https://akx.github.io/demystifying-webpack/'
+url = 'https://github.com/akx/demystifying-webpack'
+language = 'JavaScript'
+date = '2017-04-27'
+category = 'Presentations'
+
+[lepo]
+description = "Contract-first REST APIs in Django"
+url = 'https://akx.github.io/lepo'
+language = 'Python'
+date = '2017-05-12'
+category = 'Development'
+
+[proj4leaflet-test]
+
+[suppisyn]
+description = "Stochastic sampling synthesizer from a friend's voice"
+url = 'https://akx.github.io/suppisyn/'
+language = 'JavaScript'
+date = '2017-05-26'
+category = 'Audio'
+
+[neat]
+description = "beta.eat.fi data visualizer (proof of concept that it doesn't have to be slow)"
+url = 'https://github.com/akx/neat'
+language = 'JavaScript'
+date = '2017-05-31'
+category = 'Other stuff'
+
+[billtag]
+description = "Hackery bill splitting"
+url = 'https://github.com/akx/billtag'
+language = 'Python'
+date = '2017-06-05'
+category = 'Tools'
+
+[cookiecutter-js-sketch]
+description = "Cookiecutter template for live-reloading JS sketches"
+url = 'https://github.com/akx/cookiecutter-js-sketch'
+language = 'JavaScript'
+date = '2017-06-06'
+category = 'Development'
+
+[watercolour]
+description = "Watercolour generator"
+url = 'https://github.com/akx/watercolour'
+language = 'JavaScript'
+date = '2017-06-06'
+category = 'Graphics'
+
+[s3-dupes]
+description = "S3 duplicate object detector & deletor"
+url = 'https://github.com/akx/s3-dupes'
+language = 'JavaScript'
+date = '2017-06-22'
+category = 'Tools'
+
+
