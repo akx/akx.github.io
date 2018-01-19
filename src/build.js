@@ -1,83 +1,81 @@
 /* eslint-disable no-console */
-var CleanCSS = require('clean-css');
-var fs = require('fs');
-var pug = require('pug');
-var merge = require('merge');
-var metaMarked = require('meta-marked');
-var minify = require('html-minifier').minify;
-var _ = require('lodash');
-var path = require('path');
+const CleanCSS = require('clean-css');
+const fs = require('fs');
+const pug = require('pug');
+const merge = require('merge');
+const metaMarked = require('meta-marked');
+const { minify } = require('html-minifier');
+const _ = require('lodash');
+const path = require('path');
+const { promisify } = require('util');
+const tomlToMarkdown = require('./toml-to-markdown');
 
-var srcPath = path.normalize(path.join(__dirname, '..', 'content'));
-var outputPath = path.normalize(path.join(__dirname, '..'));
+const readFileAsync = promisify(fs.readFile);
+const writeFileAsync = promisify(fs.writeFile);
+
+const srcPath = path.normalize(path.join(__dirname, '..', 'content'));
+const outputPath = path.normalize(path.join(__dirname, '..'));
 
 pug.filters.css = function (source) {
   return new CleanCSS().minify(source).styles;
 };
 
-var templates = {};
-function getTemplate(filename, callback) {
+const templates = {};
+
+function getTemplate(filename) {
   if (templates[filename]) {
-    callback(templates[filename]);
-    return;
+    return Promise.resolve(templates[filename]);
   }
-  var templatePath = path.join('templates', filename || 'default.pug');
-  fs.readFile(templatePath, 'UTF-8', function (err, text) {
-    if (err) throw err;
-    var template = pug.compile(text, {filename: templatePath});
+  const templatePath = path.join('templates', filename || 'default.pug');
+  return readFileAsync(templatePath, 'UTF-8').then((text) => {
+    const template = pug.compile(text, { filename: templatePath });
     templates[filename] = template;
-    callback(template);
+    return template;
   });
 }
 
 function getEnv(filename) {
   return {
-    filename: filename,
-    reposMarkdown: function () {
-      var data = fs.readFileSync(path.join(srcPath, 'repos.toml'), 'UTF-8');
-      return require('./toml-to-markdown')(data);
+    filename,
+    reposMarkdown() {
+      const data = fs.readFileSync(path.join(srcPath, 'repos.toml'), 'UTF-8');
+      return tomlToMarkdown(data);
     },
   };
 }
 
 function build(filename) {
-  fs.readFile(filename, 'UTF-8', function (rerr, content) {
-    var basename = path.basename(filename);
-    var baseExt = path.basename(filename, path.extname(filename));
-    var meta = {};
-    var html;
+  return readFileAsync(filename, 'UTF-8').then((content) => {
+    const basename = path.basename(filename);
+    const baseExt = path.basename(filename, path.extname(filename));
+    let meta = {};
+    let html;
     if (content.indexOf('<%') > -1) {
       content = _.template(content)(getEnv(filename));
     }
     html = content;
     if (/md$/.test(filename)) {
-      var result = metaMarked(content);
+      const result = metaMarked(content);
       meta = result.meta || {};
       html = result.html;
     }
     meta.path = filename;
     meta.basename = basename;
     meta.slug = baseExt;
-    meta.outputName = path.join(outputPath, baseExt + '.html');
-    getTemplate(meta.template, function (template) {
-      var output = minify(template(merge({content: html}, meta)), {
+    meta.outputName = path.join(outputPath, `${baseExt}.html`);
+    return getTemplate(meta.template)
+      .then(template => minify(template(merge({ content: html }, meta)), {
         collapseWhitespace: true,
         removeAttributeQuotes: true,
         removeRedundantAttributes: true,
-      });
-      fs.writeFile(meta.outputName, output, 'utf8', function (werr) {
-        if (werr) throw werr;
+      }))
+      .then(output => writeFileAsync(meta.outputName, output, 'utf8').then(() => {
         console.log('[+]', meta.path, '->', meta.outputName);
-      });
-    });
+      }));
   });
 }
 
-fs.readdir(srcPath, function (err, files) {
+fs.readdir(srcPath, (err, files) => {
   if (err) throw err;
-  files.filter(function (f) {
-    return /\.md$/.test(f);
-  }).map(function (f) {
-    return path.join(srcPath, f);
-  }).forEach(build);
+  files.filter(f => /\.md$/.test(f)).map(f => path.join(srcPath, f)).forEach(build);
 });

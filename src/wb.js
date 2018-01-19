@@ -1,9 +1,9 @@
-var sprintf = require('sprintf-js').sprintf;
+const { sprintf } = require('sprintf-js');
 
 module.exports = function () {
-  var output = '';
-  var write = function write(/* ... */) {
-    output += sprintf.apply(null, arguments);
+  let output = '';
+  const write = function write(...args) {
+    output += sprintf(...args);
   };
   write.getOutput = function getOutput() {
     return output;
