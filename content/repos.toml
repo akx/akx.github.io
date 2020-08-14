@@ -988,3 +988,541 @@ date = '2017-12-20'
 category = 'Audio'
 
 
+[concol]
+description = "Console color experiment, 2015"
+url = 'https://github.com/akx/concol'
+language = 'Python'
+date = '2015'
+category = 'Other stuff'
+
+[throwmoredots]
+description = "Generate \"raster dot\" SVGs from images"
+homepage = 'https://akx.github.io/throwmoredots'
+url = 'https://github.com/akx/throwmoredots'
+language = 'JavaScript'
+date = '2018-02-26'
+category = 'Graphics'
+
+[ruuvidriver]
+description = "Serves your Ruuvitag Weather Station data over HTTP."
+url = 'https://github.com/akx/ruuvidriver'
+language = 'JavaScript'
+date = '2018-03-20'
+category = 'Home Automation'
+
+[svgpathology]
+description = "Real-time editor for SVG paths"
+homepage = 'https://akx.github.io/svgpathology/'
+url = 'https://github.com/akx/svgpathology'
+language = 'JavaScript'
+date = '2018-03-23'
+category = 'Graphics'
+
+[babel-usage]
+
+[drf_unique_together_testcase]
+
+[reggize]
+
+[coil]
+description = "Procedural SVG generator"
+homepage = 'https://akx.github.io/coil/'
+url = 'https://github.com/akx/coil'
+language = 'TypeScript'
+date = '2018-04-08'
+category = 'Graphics'
+
+[satufy-pdfs]
+description = "Read PDFs out loud via macOS `say`"
+url = 'https://github.com/akx/satufy-pdfs'
+language = 'Makefile'
+date = '2018-04-20'
+category = 'Other stuff'
+
+[transgress]
+description = "Find out which line strings are close to a number of points"
+url = 'https://github.com/akx/transgress'
+language = 'Python'
+date = '2018-04-21'
+category = 'Games'
+
+[webpack-xray]
+description = "A modern webpack bundle analyzer"
+homepage = 'https://akx.github.io/webpack-xray/'
+url = 'https://github.com/akx/webpack-xray'
+language = 'TypeScript'
+date = '2018-04-28'
+category = 'Development'
+
+[css-i18n]
+description = " Mappings of CSS properties, keywords and colors to various languages!  It's silly!"
+url = 'https://github.com/akx/css-i18n'
+language = 'JavaScript'
+date = '2018-05-29'
+category = 'Development'
+
+[untappd-user-stats-tools]
+description = "Utilities for Untappd Supporters to help them analyze their history"
+url = 'https://github.com/akx/untappd-user-stats-tools'
+language = 'Python'
+date = '2018-05-30'
+category = 'Other stuff'
+
+[afsp-mirror]
+description = "Mirror of AFsp (Audio File Programs and Routines)"
+homepage = 'http://www-mmsp.ece.mcgill.ca/Documents/Downloads/AFsp/index.html'
+url = 'https://github.com/akx/afsp-mirror'
+language = 'C'
+date = '2018-06-05'
+category = 'Audio'
+
+[data-uri]
+description = " data: URI encode/decode tool."
+url = 'https://github.com/akx/data-uri'
+language = 'Python'
+date = '2018-06-05'
+category = 'Development'
+
+[dotnet-cfg-example]
+description = ".NET parser for an example context-free grammar syntax"
+url = 'https://github.com/akx/dotnet-cfg-example'
+language = 'C#'
+date = '2018-06-15'
+category = 'Development'
+
+[follaritrack]
+description = "Time-series of Fölläris"
+url = 'https://github.com/akx/follaritrack'
+language = 'Python'
+date = '2018-06-26'
+category = 'Data Science'
+
+[ledbadger]
+description = "Tools for interacting with XANES X1 programmable LED bicycle taillights"
+url = 'https://github.com/akx/ledbadger'
+language = 'HTML'
+date = '2018-06-29'
+category = 'Other stuff'
+
+[less-cache-bug]
+
+[repose]
+description = "Visualize the evolution of a Git repository's languages and size"
+url = 'https://github.com/akx/repose'
+language = 'Python'
+date = '2018-07-03'
+category = 'Development'
+
+[misc]
+
+[dontletgo]
+description = "A silly Flash game I made in 2004."
+homepage = 'https://akx.github.io/dontletgo/1/DontLetGo.html'
+url = 'https://github.com/akx/dontletgo'
+language = 'HTML'
+date = '2018-07-09'
+category = 'Games'
+
+[npm-dep]
+description = "Generate dependency graphs of NPM packages"
+url = 'https://github.com/akx/npm-dep'
+language = 'Python'
+date = '2018-07-13'
+category = 'Development'
+
+[valohai-pupper-example]
+
+[nicen]
+description = "Nicen makes your code look nicer! (An omniglot pretty-printer.)"
+homepage = 'https://nicen.pw/'
+url = 'https://github.com/akx/nicen'
+language = 'JavaScript'
+date = '2018-07-27'
+category = 'Development'
+
+[safka]
+
+[so51485816]
+
+[new-noises]
+description = "A char-rnn to generate new nonsensical genre names based on everynoise data"
+url = 'https://github.com/akx/new-noises'
+language = 'Python'
+date = '2018-08-07'
+category = 'Data Science'
+
+[so51656477]
+
+[slack-image-download]
+description = "Download images from Slack workspaces. (DOWNLOAD ALL THE DOGGOS)"
+url = 'https://github.com/akx/slack-image-download'
+language = 'Python'
+date = '2018-08-17'
+category = 'Utilities'
+
+[listless]
+
+[suomen-pizzeriat-ja-kebulat]
+description = ""
+url = 'https://github.com/akx/suomen-pizzeriat-ja-kebulat'
+language = 'Python'
+date = '2018-08-22'
+category = 'Data Science'
+
+[autotypes]
+description = "Finds non-stub TypeScript @types/ packages for your package.json."
+url = 'https://github.com/akx/autotypes'
+language = 'JavaScript'
+date = '2018-08-29'
+category = 'Development'
+
+[emoji-extract]
+description = "Extract Apple Color emoji"
+url = 'https://github.com/akx/emoji-extract'
+language = 'Python'
+date = '2018-09-03'
+category = 'Utilities'
+
+[tem]
+description = "Realtime templating tool"
+url = 'https://github.com/akx/tem'
+language = 'JavaScript'
+date = '2018-09-28'
+category = 'Utilities'
+
+[keyble]
+description = "(lausutaan kiipeli) An OCR hack."
+url = 'https://github.com/akx/keyble'
+language = 'Python'
+date = '2018-09-30'
+category = 'Games'
+
+[diced]
+description = "A very small HTTP dice daemon"
+url = 'https://github.com/akx/diced'
+language = 'C'
+date = '2018-10-26'
+category = 'Other stuff'
+
+[asdfsanat]
+description = "find paths and chains of finnish words, e.g. pala - ala - sala"
+url = 'https://github.com/akx/asdfsanat'
+language = 'Python'
+date = '2018-11-27'
+category = 'Data science'
+
+[aoc2018]
+description = ""
+url = 'https://github.com/akx/aoc2018'
+language = 'Python'
+date = '2018-12-03'
+category = 'Development'
+
+[slack-emoji]
+description = "slack emoji downloader"
+url = 'https://github.com/akx/slack-emoji'
+language = 'Python'
+date = '2018-12-04'
+category = 'Utilities'
+
+[hass-ruuvitag]
+description = "Hass.io addon for Ruuvitag Weather Stations"
+url = 'https://github.com/akx/hass-ruuvitag'
+language = 'TypeScript'
+date = '2018-12-22'
+category = 'Home Automation'
+
+[tm35fin]
+description = "JavaScript tools for converting to/from Finnish maps"
+url = 'https://github.com/akx/tm35fin'
+language = 'Python'
+date = '2019-01-30'
+category = 'Development'
+
+[google-authenticator-extract]
+description = "Extract QR codes from a Google Authenticator database file"
+url = 'https://github.com/akx/google-authenticator-extract'
+language = 'Python'
+date = '2019-03-09'
+category = 'Utilities'
+
+[prh-pokemon]
+description = "Compare company names to Pokémon names."
+url = 'https://github.com/akx/prh-pokemon'
+language = 'Python'
+date = '2019-03-19'
+category = 'Other stuff'
+
+[so55822235]
+description = "Python extension wrapping strpbrk() for ultimate performance"
+url = 'https://github.com/akx/so55822235'
+language = 'C'
+date = '2019-04-24'
+category = 'Development'
+
+[mootate]
+description = "Mutate text á la \"All work and no play...\""
+url = 'https://github.com/akx/mootate'
+language = 'Python'
+date = '2019-06-06'
+category = 'Utilities'
+
+[fdf]
+description = "Fast Duplicate Finder"
+url = 'https://github.com/akx/fdf'
+language = 'Rust'
+date = '2019-07-08'
+category = 'Utilities'
+
+[kcs-vote]
+description = "D'Hondt tally for Desu/C 2017"
+url = 'https://github.com/akx/kcs-vote'
+language = 'Python'
+date = '2019-08-12'
+category = 'Utilities'
+
+[juomamaailma-scrape]
+description = ""
+url = 'https://github.com/akx/juomamaailma-scrape'
+language = 'Python'
+date = '2019-09-10'
+category = 'Utilities'
+
+[m5-experiments]
+description = ""
+url = 'https://github.com/akx/m5-experiments'
+language = 'Shell'
+date = '2019-09-12'
+category = 'Embedded'
+
+[small-drf-demo]
+
+[solidabis-koodihaaste-2019]
+
+[papyrus-terrible]
+description = "A bookmarklet to set any site in a terrible version of Papyrus"
+homepage = 'https://akx.github.io/papyrus-terrible/'
+url = 'https://github.com/akx/papyrus-terrible'
+language = 'HTML'
+date = '2019-10-25'
+category = 'Graphics'
+
+[subway-encoding]
+
+[havaintopallo]
+description = "Download & convert Finnish Meteorological Institute observation data"
+url = 'https://github.com/akx/havaintopallo'
+language = 'Python'
+date = '2019-11-04'
+category = 'Data Science'
+
+[so58712204]
+
+[react-wheely]
+description = "A mouse/touch-driven wheel component for React.js."
+homepage = 'https://akx.github.io/react-wheely/'
+url = 'https://github.com/akx/react-wheely'
+language = 'JavaScript'
+date = '2019-11-21'
+category = 'Development'
+
+[aoc2019]
+
+[gifminterp]
+description = "Automatically generates high-quality motion-interpolated 120 FPS loops from low-FPS GIFs"
+url = 'https://github.com/akx/gifminterp'
+language = 'Python'
+date = '2019-12-10'
+category = 'Graphics'
+
+[pyml]
+description = "Non-serious Python as YAML proof of concept"
+url = 'https://github.com/akx/pyml'
+language = 'Python'
+date = '2019-12-12'
+category = 'Development'
+
+[source-from-sourcemaps]
+description = "Extract original source from JavaScript sourcemaps."
+url = 'https://github.com/akx/source-from-sourcemaps'
+language = 'JavaScript'
+date = '2019-12-13'
+category = 'Development'
+
+[ikuinen-webbikoodaus]
+description = "Podcast-generaattori."
+homepage = 'https://akx.github.io/ikuinen-webbikoodaus/'
+url = 'https://github.com/akx/ikuinen-webbikoodaus'
+language = 'TypeScript'
+date = '2020-01-13'
+category = 'Audio'
+
+[res-extract]
+description = "Resource (icon) extraction tools"
+url = 'https://github.com/akx/res-extract'
+language = 'Python'
+date = '2020-01-30'
+category = 'Utilities'
+
+[emojiscript]
+description = 'A programming language in all emojis'
+url = 'https://github.com/akx/emojiscript'
+language = 'Python'
+date = '2020-01-31'
+category = 'Development'
+
+[homebrew-things]
+
+[appify]
+description = "Easily wrap a regular binary into a macOS .app bundle."
+url = 'https://github.com/akx/appify'
+language = 'Python'
+date = '2020-02-15'
+category = 'Development'
+
+[nordnet-stream]
+description = "Stream data from Nordnet's semipublic API"
+url = 'https://github.com/akx/nordnet-stream'
+language = 'Python'
+date = '2020-03-10'
+category = 'Finance'
+
+[telegram-sticker-dl]
+description = "Download sticker packs from Telegram"
+url = 'https://github.com/akx/telegram-sticker-dl'
+language = 'Python'
+date = '2020-03-11'
+category = 'Utilities'
+
+[wipo-export]
+
+[mutsuki-portfolio-client]
+
+[celery-test]
+
+[lauttanen]
+description = ":ship: Finnish archipelago trip planner"
+homepage = 'https://akx.github.io/lauttanen/'
+url = 'https://github.com/akx/lauttanen'
+language = 'TypeScript'
+date = '2020-04-13'
+category = 'Other stuff'
+
+[docker-show-context-rust]
+description = "Show a Docker build context"
+url = 'https://github.com/akx/docker-show-context-rust'
+language = 'Rust'
+date = '2020-04-15'
+category = 'Development'
+
+[juupeli]
+description = "Encodes arbitrary Python data structures into XML in a reasonably sane way."
+url = 'https://github.com/akx/juupeli'
+language = 'Python'
+date = '2020-05-26'
+category = 'Development'
+
+[multi-room-stream]
+description = "LiquidSoap script for a multi-room streaming system"
+url = 'https://github.com/akx/multi-room-stream'
+language = 'null'
+date = '2020-06-04'
+category = 'Audio'
+
+[composure]
+description = "Composite *.tif image sequences from several directories into a single PNG image sequence."
+url = 'https://github.com/akx/composure'
+language = 'Python'
+date = '2020-06-08'
+category = 'Graphics'
+
+[use-pagination]
+description = "Super simple TypeScript native pagination hook for React."
+url = 'https://github.com/akx/use-pagination'
+language = 'TypeScript'
+date = '2020-06-13'
+category = 'Development'
+
+[browserdungeons]
+description = "A game I made inspired by Desktop Dungeons back in 2010. Ported from a private Hg repository, so the quality's not the best."
+homepage = 'https://akx.github.io/browserdungeons/'
+url = 'https://github.com/akx/browserdungeons'
+language = 'JavaScript'
+date = '2010'
+category = 'Games'
+
+[csharp-jsonparser]
+description = ""
+url = 'https://github.com/akx/csharp-jsonparser'
+language = 'C#'
+date = '2020-06-24'
+category = 'Development'
+
+[python-minift]
+description = ""
+url = 'https://github.com/akx/python-minift'
+language = 'Python'
+date = '2020-06-24'
+category = 'Development'
+
+[kohina]
+description = "An old C#/.NET/WinForms node-based graphics processor."
+url = 'https://github.com/akx/kohina'
+language = 'C#'
+date = '2010-ish'
+category = 'Graphics'
+
+[xalc3]
+description = "A little desktop calculator (or Lua interpreter) for C#."
+url = 'https://github.com/akx/xalc3'
+language = 'C#'
+date = '2010-ish'
+category = 'Utilities'
+
+[lanline]
+description = "Once upon a time I wrote a file sharing program for LAN networks during a LAN party. The timestamps reflect this."
+url = 'https://github.com/akx/lanline'
+language = 'C#'
+date = '2020-06-24'
+category = 'Utilities'
+
+[uberfader]
+description = "Concatenate and crossfade audio to form a very long sequence."
+url = 'https://github.com/akx/uberfader'
+language = 'Python'
+date = '2020-06-29'
+category = 'Audio'
+
+[oneten]
+description = "Play music like it's meant to be played, at 110 BPM."
+homepage = 'https://akx.github.io/oneten/'
+url = 'https://github.com/akx/oneten'
+language = 'JavaScript'
+date = '2020-06-29'
+category = 'Audio'
+
+[hmc]
+description = "Hours/minutes converter"
+homepage = 'https://akx.github.io/hmc/'
+url = 'https://github.com/akx/hmc'
+language = 'HTML'
+date = '2020-06-30'
+category = 'Utilities'
+
+[silcrowsnest]
+description = "Find all the silcrows."
+url = 'https://github.com/akx/silcrowsnest'
+language = 'Python'
+date = '2020-08-04'
+category = 'Graphics'
+
+[so63265336]
+
+[andrey]
+description = "Markov chain text generator."
+url = 'https://github.com/akx/andrey'
+language = 'Rust'
+date = '2020-08-07'
+category = 'Utilities'
+
+
