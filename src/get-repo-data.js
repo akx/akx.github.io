@@ -1,34 +1,32 @@
 /* eslint-disable no-console */
 const fs = require('fs');
-const GitHub = require('@octokit/rest');
-
-const gh = new GitHub({
+const { Octokit } = require("@octokit/rest");
+const gh = new Octokit({
   version: '3.0.0',
   debug: true,
   headers: { 'user-agent': 'akx.github.io-buildtool' },
 });
-let repos = [];
-let page = 1;
 
-function complete() {
+function complete(repos) {
   fs.writeFileSync('repos.json', JSON.stringify(repos), 'UTF-8');
 }
 
-function getPage() {
-  console.log('...', page);
-  gh.repos.getForUser({
-    username: 'akx',
-    page,
-    per_page: 100,
-  }, (err, res) => {
+async function getContent() {
+  let repos = [];
+  let page = 1;
+  for(let page = 1;; page++) {
+    console.log('...', page);
+    const res = await gh.repos.listForUser({
+      username: 'akx',
+      page,
+      per_page: 100,
+    });
     repos = repos.concat(res.data);
-    if (res.data.length > 0) {
-      page += 1;
-      getPage();
-    } else {
-      complete();
+    if(res.data.length <= 0) {
+      break;
     }
-  });
+  }
+  return repos;
 }
 
-getPage();
+getContent().then(complete);
