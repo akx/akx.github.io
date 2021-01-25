@@ -1525,4 +1525,146 @@ language = 'Rust'
 date = '2020-08-07'
 category = 'Utilities'
 
+[unicode-fuckery]
+
+[csdecode]
+description = "Decodes some CSD files"
+url = 'https://github.com/akx/csdecode'
+language = 'Python'
+date = '2020-08-24'
+category = 'Reverse Engineering'
+
+[moo]
+description = "A Befunge-like esolang from 2005, implemented in Basic"
+url = 'https://github.com/akx/moo'
+language = 'QBasic'
+date = '2020-09-01'
+category = 'Development'
+
+[kuntaliitto-scrape]
+description = "Scrapes data from Kuntaliitto's site."
+url = 'https://github.com/akx/kuntaliitto-scrape'
+language = 'Python'
+date = '2020-09-11'
+category = 'Data Science'
+
+[so63831434]
+
+[pipimi]
+description = "Proof of concept super-fast Python dependency locker"
+url = 'https://github.com/akx/pipimi'
+language = 'Python'
+date = '2020-09-11'
+category = 'Development'
+
+[hackathon_whjr-covid-calculator]
+
+[jatkoyhdyssana]
+description = "yhdyssanalogia-digitaalimuunnin"
+url = 'https://github.com/akx/jatkoyhdyssana'
+language = 'Rust'
+date = '2020-09-22'
+category = 'Other stuff'
+
+[blahfeed]
+description = "RSS/Atom/... feed combinator"
+url = 'https://github.com/akx/blahfeed'
+language = 'Python'
+date = '2020-10-12'
+category = 'Other stuff'
+
+[as3-line-of-sight]
+description = "An old Flash tech demo."
+homepage = 'https://akx.github.io/as3-line-of-sight/bin/index.html'
+url = 'https://github.com/akx/as3-line-of-sight'
+language = 'ActionScript'
+date = '2020-10-15'
+category = 'Other stuff'
+
+[-]
+
+[nmap-xml-format]
+description = "Formats Nmap XML output into human-readable (Markdown) form."
+url = 'https://github.com/akx/nmap-xml-format'
+language = 'Python'
+date = '2020-10-20'
+category = 'Other stuff'
+
+[intense]
+description = "Makes your face look more intense."
+url = 'https://github.com/akx/intense'
+language = 'JavaScript'
+date = '2020-11-26'
+category = 'Other stuff'
+
+[aoc2020]
+
+[flat-ui-colors-json]
+description = "The colors from flatuicolors.com as JSON"
+url = 'https://github.com/akx/flat-ui-colors-json'
+language = 'JavaScript'
+date = '2020-12-04'
+category = 'Development'
+
+[elbowgrease]
+description = "Filter and reformat Amazon AWS ELB log files"
+url = 'https://github.com/akx/elbowgrease'
+language = 'Rust'
+date = '2020-12-06'
+category = 'Development'
+
+[travis-to-github-actions]
+description = "Convert Travis.yml to GitHub Actions workflows."
+homepage = 'https://akx.github.io/travis-to-github-actions/'
+url = 'https://github.com/akx/travis-to-github-actions'
+language = 'TypeScript'
+date = '2020-12-08'
+category = 'Development'
+
+[xsltwhoa]
+
+[spacefill]
+description = "An organic-looking space-filling algorithm"
+homepage = 'https://akx.github.io/spacefill/spacefill.html'
+url = 'https://github.com/akx/spacefill'
+language = 'HTML'
+date = '2012'
+category = 'Graphics'
+
+[fixit-rewrite-asserts]
+description = "Fixit rule to rewrite assertions into `if not X: raise AssertionError(\"X\")`"
+url = 'https://github.com/akx/fixit-rewrite-asserts'
+language = 'Python'
+date = '2021-01-05'
+category = 'Development'
+
+[fi-geocode]
+description = 'A simple geocoder for Finnish addresses using public data'
+url = 'https://github.com/akx/fi-geocode'
+language = 'Python'
+date = '2021-01-08'
+category = 'Other stuff'
+
+[pyfastxml]
+description = 'Experiments with fast low-memory XML parsing in Python'
+url = 'https://github.com/akx/pyfastxml'
+language = 'C'
+date = '2021-01-15'
+category = 'Development'
+
+[svg-calendar-generator]
+description = "Generates calendars as SVGs."
+homepage = 'https://akx.github.io/svg-calendar-generator'
+url = 'https://github.com/akx/svg-calendar-generator'
+language = 'TypeScript'
+date = '2021-01-18'
+category = 'Utilities'
+
+[energiaonline-scrape]
+description = "Scrapes machine-readable energy consumption data from energiaonline.fi"
+url = 'https://github.com/akx/energiaonline-scrape'
+language = 'Python'
+date = '2021-01-18'
+category = 'Home Automation'
+
 
