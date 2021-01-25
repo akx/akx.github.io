@@ -1,6 +1,7 @@
-/* eslint-disable no-console */
+/* eslint-disable no-console, no-await-in-loop */
 const fs = require('fs');
-const { Octokit } = require("@octokit/rest");
+const { Octokit } = require('@octokit/rest');
+
 const gh = new Octokit({
   version: '3.0.0',
   debug: true,
@@ -13,8 +14,7 @@ function complete(repos) {
 
 async function getContent() {
   let repos = [];
-  let page = 1;
-  for(let page = 1;; page++) {
+  for (let page = 1; ; page += 1) {
     console.log('...', page);
     const res = await gh.repos.listForUser({
       username: 'akx',
@@ -22,7 +22,7 @@ async function getContent() {
       per_page: 100,
     });
     repos = repos.concat(res.data);
-    if(res.data.length <= 0) {
+    if (res.data.length <= 0) {
       break;
     }
   }

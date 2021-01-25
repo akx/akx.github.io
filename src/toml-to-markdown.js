@@ -7,7 +7,7 @@ function formatRepoData(tomlData) {
   _.forEach(data, (obj, name) => {
     obj.name = obj.name || name;
   });
-  const repos = _(data).values().filter(obj => !!obj.category).sortBy('date')
+  const repos = _(data).values().filter((obj) => !!obj.category).sortBy('date')
     .value();
   const categories = _.groupBy(repos, 'category');
   _.keys(categories).sort().forEach((category) => {

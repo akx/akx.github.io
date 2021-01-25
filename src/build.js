@@ -64,12 +64,12 @@ function build(filename) {
     meta.slug = baseExt;
     meta.outputName = path.join(outputPath, `${baseExt}.html`);
     return getTemplate(meta.template)
-      .then(template => minify(template(merge({ content: html }, meta)), {
+      .then((template) => minify(template(merge({ content: html }, meta)), {
         collapseWhitespace: true,
         removeAttributeQuotes: true,
         removeRedundantAttributes: true,
       }))
-      .then(output => writeFileAsync(meta.outputName, output, 'utf8').then(() => {
+      .then((output) => writeFileAsync(meta.outputName, output, 'utf8').then(() => {
         console.log('[+]', meta.path, '->', meta.outputName);
       }));
   });
@@ -77,5 +77,5 @@ function build(filename) {
 
 fs.readdir(srcPath, (err, files) => {
   if (err) throw err;
-  files.filter(f => /\.md$/.test(f)).map(f => path.join(srcPath, f)).forEach(build);
+  files.filter((f) => /\.md$/.test(f)).map((f) => path.join(srcPath, f)).forEach(build);
 });
