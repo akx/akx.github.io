@@ -1,9 +1,22 @@
 module.exports = {
-  "extends": "airbnb-base",
-  "rules": {
-    "func-names": 0,
-    "linebreak-style": 0,
-    "no-param-reassign": 0,
-    "vars-on-top": 0,
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: ['plugin:react/recommended', 'airbnb'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['react'],
+  rules: {
+    'react/jsx-filename-extension': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
+    'react/jsx-no-target-blank': 'off',
+    'import/no-webpack-loader-syntax': 'off',
   },
 };

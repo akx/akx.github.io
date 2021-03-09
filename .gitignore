@@ -1,3 +1,15 @@
+*.log
+*.pem
+.DS_Store
+.env*
+.idea
+.pnp.js
+.vercel
+/.next/
+/.pnp
+/build
+/coverage
+/out/
+/stashh
 node_modules
 repos.json
-.idea

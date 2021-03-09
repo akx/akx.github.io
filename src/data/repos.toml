@@ -1667,4 +1667,33 @@ language = 'Python'
 date = '2021-01-18'
 category = 'Home Automation'
 
+[gloop]
+description = "Automatic as-perfect-as-possible GIF loop maker"
+url = 'https://github.com/akx/gloop'
+language = 'Python'
+date = '2021-01-31'
+category = 'Graphics'
+
+[slack-extrapolate]
+description = "Extrapolate Slack member counts based on member activity data"
+url = 'https://github.com/akx/slack-extrapolate'
+language = 'Python'
+date = '2021-02-18'
+category = 'Data Science'
+
+[hindex]
+description = "HTML indexer experiment"
+url = 'https://github.com/akx/hindex'
+language = 'Python'
+date = '2021-02-26'
+category = 'Data Science'
+
+[gradient]
+description = "Gradient designer with code generation."
+homepage = 'https://akx.github.io/gradient/'
+url = 'https://github.com/akx/gradient'
+language = 'TypeScript'
+date = '2021-02-27'
+category = 'Graphics'
+
 
