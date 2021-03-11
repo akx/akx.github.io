@@ -257,7 +257,7 @@ category = 'Other stuff'
 
 
 [tcd]
-name = "tcd (aka tiny colorful dots)"
+name = "tcd"
 description = "Tiny Colorful Dots - a simple, small, fast light color picker"
 url = 'https://github.com/akx/tcd'
 language = 'C#'
@@ -896,7 +896,7 @@ description = "Expose Django management commands in the admin"
 url = 'https://github.com/akx/django-managerie'
 language = 'Python'
 date = '2017-10-15'
-category = 'Django'
+category = 'Webdev'
 
 [MacKeyLog]
 description = "Minimal macOS keylogger"
@@ -1209,7 +1209,7 @@ description = "find paths and chains of finnish words, e.g. pala - ala - sala"
 url = 'https://github.com/akx/asdfsanat'
 language = 'Python'
 date = '2018-11-27'
-category = 'Data science'
+category = 'Data Science'
 
 [aoc2018]
 description = ""
