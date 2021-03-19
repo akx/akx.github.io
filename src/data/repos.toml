@@ -37,7 +37,7 @@ description = "A bridge between Everything and Find and Run Robot."
 url = 'https://github.com/akx/farr_tinyev'
 language = "C"
 date = "2009-06-12"
-category = "Utilities"
+category = "Tools"
 status = "Release"
 
 [foamy]
