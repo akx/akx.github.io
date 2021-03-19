@@ -68,11 +68,18 @@ h3, h4 {
   letter-spacing: 0.5rem;
 }
 
-.category-body {
+.status-tier {
   padding: 1rem;
+}
+
+.status-tier-body {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+}
+
+.status-tier h3 {
+  margin-top: 0;
 }
 
 .repo-card {
@@ -124,16 +131,3 @@ h3, h4 {
 span.spacer {
   flex-grow: 1;
 }
-
-/*.repo-header .date {*/
-/*  flex: 0;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  align-items: center;*/
-/*}*/
-/*.repo-header .date span {*/
-/*  display: none;*/
-/*}*/
-/*.repo-header .date span.year, .repo-header .date span.month {*/
-/*  display: inline-block;*/
-/*}*/
