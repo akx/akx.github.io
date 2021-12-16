@@ -13,11 +13,12 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    'import/no-webpack-loader-syntax': 'off',
+    'react/function-component-definition': 'off',
     'react/jsx-filename-extension': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'react/prop-types': 'off',
     'react/jsx-no-target-blank': 'off',
     'react/one-expression-per-line': 'off',
-    'import/no-webpack-loader-syntax': 'off',
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
 };
