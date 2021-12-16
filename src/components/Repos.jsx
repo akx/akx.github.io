@@ -18,7 +18,7 @@ function Category({name, repos, index}) {
   const statusesInOrder = sortBy(Object.keys(byStatus), (s) => statusTiers[s] || 99);
 
   return (
-    <div className="category" style={{background: color.hex}}>
+    <div className="category" style={{background: color.hex}} id={name.toLowerCase()}>
       <h2 className="category-header" style={{color: color.hex}}>
         {name}
       </h2>

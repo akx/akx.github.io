@@ -47,7 +47,7 @@ export default function RepoCard({ repo }) {
   const dateBadge = getDateBadge(date);
   const languageBadge = getLanguageBadge(language);
   return (
-    <div className="repo-card">
+    <div className="repo-card" id={name.toLowerCase()}>
       <div className="repo-header">
         <h3>{name}</h3>
         <span className="spacer" />
