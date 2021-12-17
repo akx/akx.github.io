@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Hello from '../components/Hello.mdx';
 import Repos from '../components/Repos';
+// @ts-ignore
+import Hello from '../components/Hello.mdx';
 
 export default function Home() {
   return (

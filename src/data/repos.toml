@@ -1883,3 +1883,131 @@ date = '2021-02-27'
 category = 'Graphics'
 status = 'Release'
 
+[avidly-frappe-charts]
+
+[python-codemods]
+description = "Python codemods"
+url = 'https://github.com/akx/python-codemods'
+language = 'Python'
+date = '2021-01-05'
+category = 'Uncategorized'
+
+[docker-interactive-rmi]
+description = "Interactive `rmi` for docker"
+url = 'https://github.com/akx/docker-interactive-rmi'
+language = 'JavaScript'
+date = '2021-04-07'
+category = 'Development'
+
+[depix]
+description = "Detects the scale factor of an upscaled pixel art image and scales it down for you"
+homepage = 'https://akx.github.io/depix/'
+url = 'https://github.com/akx/depix'
+language = 'TypeScript'
+date = '2021-04-07'
+category = 'Graphics'
+
+[jest-esm-test]
+
+[nessu]
+description = "A NES emulator that corrupts ROMs"
+homepage = 'https://akx.github.io/nessu/'
+url = 'https://github.com/akx/nessu'
+language = 'TypeScript'
+date = '2021-06-11'
+category = 'Tools'
+
+[mappi]
+description = "A mapping function finder"
+url = 'https://github.com/akx/mappi'
+language = 'Python'
+date = '2021-06-18'
+category = 'Development'
+
+[vite-react-ts-template]
+description = "My React + TypeScript template for Vite"
+url = 'https://github.com/akx/vite-react-ts-template'
+language = 'TypeScript'
+date = '2021-06-24'
+category = 'Development'
+
+[fi-words]
+description = "A list of Finnish words and names, automagically generated from online data."
+url = 'https://github.com/akx/fi-words'
+language = 'Python'
+date = '2021-06-27'
+category = 'Tools'
+
+[pypipo]
+description = "simple PyPI pull-through proxy"
+url = 'https://github.com/akx/pypipo'
+language = 'Python'
+date = '2021-07-09'
+category = 'Development'
+
+[cachemoney]
+description = "Extracts files from Chrome/Chromium/Electron cache."
+url = 'https://github.com/akx/cachemoney'
+language = 'Python'
+date = '2021-08-11'
+category = 'Tools'
+
+[wiz-colors]
+description = "Named colors from the WiZ Connected Android app."
+homepage = 'https://akx.github.io/wiz-colors/colors.html'
+url = 'https://github.com/akx/wiz-colors'
+language = 'HTML'
+date = '2021-08-18'
+category = 'Graphics'
+
+[minsky-explorer]
+description = "A graphics hack based on the Minsky circle algorithm"
+homepage = 'https://akx.github.io/minsky-explorer/'
+url = 'https://github.com/akx/minsky-explorer'
+language = 'TypeScript'
+date = '2021-09-01'
+category = 'Graphics'
+
+[foruda]
+description = "File manipulation DSL"
+url = 'https://github.com/akx/foruda'
+language = 'Python'
+date = '2021-09-13'
+category = 'Uncategorized'
+
+[pkgdiff]
+description = "Generate a succinct diff between two archive files."
+url = 'https://github.com/akx/pkgdiff'
+language = 'Python'
+date = '2021-09-22'
+category = 'Development'
+
+[cde-style]
+description = "Retro."
+url = 'https://github.com/akx/cde-style'
+language = 'Python'
+date = '2021-09-24'
+category = 'Graphics'
+
+[gihuha]
+description = "Tools to play with GitHub organizations, projects, and issues."
+url = 'https://github.com/akx/gihuha'
+language = 'Python'
+date = '2021-10-04'
+category = 'Development'
+
+[so69552983]
+
+[crosswindow]
+
+[rahea-fi]
+
+[tlfe-soundthing]
+description = "Synthesizer toy for Turku <3 Frontend"
+homepage = 'https://akx.github.io/tlfe-soundthing/'
+url = 'https://github.com/akx/tlfe-soundthing'
+language = 'TypeScript'
+date = '2021-11-24'
+category = 'Audio'
+
+[aoc2021]

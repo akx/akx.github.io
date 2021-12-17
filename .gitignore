@@ -1,5 +1,6 @@
 *.log
 *.pem
+*.tsbuildinfo
 .DS_Store
 .env*
 .idea

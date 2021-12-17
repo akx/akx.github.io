@@ -5,10 +5,11 @@ import HTMLLogo from '../images/html.svg';
 import JSLogo from '../images/js.svg';
 import TSLogo from '../images/ts.svg';
 import CSharpLogo from '../images/csharp.svg';
+import { Repository } from '../data/types';
 
 const ymdRe = /^([0-9]{4})-([0-9]{2})(?:-([0-9]{2}))?$/;
 
-function getDateBadge(date) {
+function getDateBadge(date: string) {
   const ymdMatch = ymdRe.exec(date);
   if (ymdMatch) {
     return (
@@ -22,7 +23,8 @@ function getDateBadge(date) {
   return null;
 }
 
-function getLanguageBadge(language) {
+function getLanguageBadge(language: string | undefined) {
+  // eslint-disable-next-line no-param-reassign
   language = `${language}`.toLowerCase();
   if (language.includes('python')) {
     return <img src={PythonLogo} alt="Python" />;
@@ -42,7 +44,29 @@ function getLanguageBadge(language) {
   return null;
 }
 
-export default function RepoCard({ repo }) {
+function MultiLink({ url, text }: { url: string | string[] | undefined; text: string }) {
+  if (!url) return null;
+  const urls = Array.isArray(url) ? url : url.split(',');
+  if (urls.length > 1) {
+    return (
+      <>
+        {text}{' '}
+        {urls.map((u, i) => (
+          <a key={u} href={u} target="_blank">
+            {i + 1}
+          </a>
+        ))}
+      </>
+    );
+  }
+  return (
+    <a href={urls[0]} target="_blank">
+      {text}
+    </a>
+  );
+}
+
+export default function RepoCard({ repo }: { repo: Repository }) {
   const { date, description, download, homepage, language, name, platform, status, url } = repo;
   const dateBadge = getDateBadge(date);
   const languageBadge = getLanguageBadge(language);
@@ -62,21 +86,9 @@ export default function RepoCard({ repo }) {
         {status ? <span>Status: {status}</span> : null}
       </div>
       <div className="repo-bar">
-        {homepage ? (
-          <a href={homepage} target="_blank">
-            View online
-          </a>
-        ) : null}
-        {download ? (
-          <a href={download} target="_blank">
-            Download
-          </a>
-        ) : null}
-        {url ? (
-          <a href={url} target="_blank">
-            Repository
-          </a>
-        ) : null}
+        <MultiLink url={homepage} text="View online" />
+        <MultiLink url={download} text="Download" />
+        <MultiLink url={url} text="Repository" />
       </div>
     </div>
   );
