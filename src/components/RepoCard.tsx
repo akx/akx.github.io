@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Markdown from 'react-markdown';
+import Image from 'next/future/image';
 import PythonLogo from '../images/python.svg';
 import HTMLLogo from '../images/html.svg';
 import JSLogo from '../images/js.svg';
@@ -23,23 +24,25 @@ function getDateBadge(date: string) {
   return null;
 }
 
+const LANGUAGE_BADGE_WIDTH = 20;
+
 function getLanguageBadge(language: string | undefined) {
   // eslint-disable-next-line no-param-reassign
   language = `${language}`.toLowerCase();
   if (language.includes('python')) {
-    return <img src={PythonLogo} alt="Python" />;
+    return <Image src={PythonLogo} alt="Python" width={LANGUAGE_BADGE_WIDTH} />;
   }
   if (language === 'html') {
-    return <img src={HTMLLogo} alt="HTML" />;
+    return <Image src={HTMLLogo} alt="HTML" width={LANGUAGE_BADGE_WIDTH} />;
   }
   if (language === 'javascript') {
-    return <img src={JSLogo} alt="JavaScript" />;
+    return <Image src={JSLogo} alt="JavaScript" width={LANGUAGE_BADGE_WIDTH} />;
   }
   if (language === 'typescript') {
-    return <img src={TSLogo} alt="TypeScript" />;
+    return <Image src={TSLogo} alt="TypeScript" width={LANGUAGE_BADGE_WIDTH} />;
   }
   if (language.includes('c#')) {
-    return <img src={CSharpLogo} alt="C#" />;
+    return <Image src={CSharpLogo} alt="C#" width={LANGUAGE_BADGE_WIDTH} />;
   }
   return null;
 }

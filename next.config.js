@@ -1,7 +1,13 @@
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
+};
+
 const withMDX = require('@next/mdx')();
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
-const withImages = require('next-images');
 
-module.exports = withImages(withBundleAnalyzer(withMDX()));
+module.exports = withBundleAnalyzer(withMDX(nextConfig));
