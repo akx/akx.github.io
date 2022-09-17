@@ -2011,3 +2011,118 @@ date = '2021-11-24'
 category = 'Audio'
 
 [aoc2021]
+
+[toyvm]
+description = "Toy VM and assembler (2008)"
+url = 'https://github.com/akx/toyvm'
+language = 'C'
+date = '2008'
+category = 'Development'
+
+[setuppy2cfg]
+description = "setup.py to setup.cfg converter"
+url = 'https://github.com/akx/setuppy2cfg'
+language = 'Python'
+date = '2021-12-21'
+category = 'Development'
+
+[kekkonen]
+description = "Minimal type-safe globalesque state for React"
+url = 'https://github.com/akx/kekkonen'
+language = 'TypeScript'
+date = '2021-12-28'
+category = 'Development'
+
+[vastasanuli]
+description = "Vastasanuli pelaa Sanuli-peliä."
+url = 'https://github.com/akx/vastasanuli'
+language = 'Python'
+date = '2022-01-02'
+category = 'Games'
+
+[perfkit]
+description = "Bits and pieces for non-production performance observation, logging and optimization."
+url = 'https://github.com/akx/perfkit'
+language = 'Python'
+date = '2022-01-05'
+category = 'Development'
+
+[unifun]
+description = "Fun with Unicode!"
+homepage = 'https://akx.github.io/unifun/'
+url = 'https://github.com/akx/unifun'
+language = 'TypeScript'
+date = '2022-01-18'
+category = 'Tools'
+
+[aegg]
+description = "An äggregator"
+url = 'https://github.com/akx/aegg'
+language = 'TypeScript'
+date = '2022-02-01'
+category = 'Development'
+
+[pino]
+description = "Stack files into a container image"
+url = 'https://github.com/akx/pino'
+language = 'Python'
+date = '2022-02-09'
+category = 'Development'
+
+[ts-state-refactor]
+description = "Tool for refactoring state in TypeScript"
+url = 'https://github.com/akx/ts-state-refactor'
+language = 'TypeScript'
+date = '2022-02-14'
+category = 'Development'
+
+[notorious]
+description = "Apple Notes database parser"
+url = 'https://github.com/akx/notorious'
+language = 'Python'
+date = '2022-03-11'
+category = 'Development'
+
+[smontry]
+description = "A very minimal single-file Python client for Sentry."
+url = 'https://github.com/akx/smontry'
+language = 'Python'
+date = '2022-03-24'
+category = 'Development'
+
+[net-encodings]
+
+[playwright-snapper]
+description = "Snapshot pages with Playwright"
+url = 'https://github.com/akx/playwright-snapper'
+language = 'Python'
+date = '2022-05-20'
+category = 'Tools'
+
+[frittikeitin]
+description = "🎶 ➡️ 🥘 ➡️ 🗑"
+homepage = 'https://akx.github.io/frittikeitin/'
+url = 'https://github.com/akx/frittikeitin'
+language = 'TypeScript'
+date = '2022-05-27'
+category = 'Audio'
+
+[react-curved-input]
+description = "A small React component to turn any SVG path into a slider."
+homepage = 'https://akx.github.io/react-curved-input/'
+url = 'https://github.com/akx/react-curved-input'
+language = 'TypeScript'
+date = '2022-07-13'
+category = 'Development'
+
+[-github]
+
+[so72942020]
+
+[wuffle]
+description = "Aesthetic word shuffler/wrapper"
+homepage = 'https://akx.github.io/wuffle/'
+url = 'https://github.com/akx/wuffle'
+language = 'TypeScript'
+date = '2022-09-14'
+category = 'Tools'
