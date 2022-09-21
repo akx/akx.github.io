@@ -47,15 +47,17 @@ function Category({ name, repos, index }: CategoryProps) {
 
 export default function Repos() {
   const { categories } = data;
-  const languages = React.useMemo(() => {
-    try {
-      return Array.from(
-        new Set(Object.values(categories).flatMap((repos) => repos.map((r) => r.language ?? 'Unknown'))),
-      ).sort();
-    } catch (e) {
-      // Assume no flatMap
-      return [];
-    }
+  const languages: [string, number][] = React.useMemo(() => {
+    const languageCounts: Record<string, number> = {};
+    Object.values(categories).forEach((repos) => {
+      repos.forEach((repo) => {
+        const language = repo.language ?? 'Unknown';
+        languageCounts[language] = (languageCounts[language] || 0) + 1;
+      });
+    });
+    return Object.keys(languageCounts)
+      .sort()
+      .map((lang) => [lang, languageCounts[lang]]);
   }, [categories]);
   const [languageFilter, setLanguageFilter] = React.useState<string | null>(null);
 
@@ -65,7 +67,9 @@ export default function Repos() {
       .sort()
       .forEach((name) => {
         const cat = categories[name];
-        const filteredRepos = cat.filter((repo) => languageFilter === null || repo.language === languageFilter);
+        const filteredRepos = cat.filter(
+          (repo) => languageFilter === null || (repo.language ?? 'Unknown') === languageFilter,
+        );
         if (filteredRepos.length > 0) {
           filtered.push([name, filteredRepos]);
         }
@@ -85,9 +89,9 @@ export default function Repos() {
               onChange={(e) => setLanguageFilter(e.target.value || null)}
             >
               <option value="">All</option>
-              {[...languages].sort().map((language) => (
+              {languages.map(([language, count]) => (
                 <option key={language} value={language}>
-                  {language}
+                  {language} ({count})
                 </option>
               ))}
             </select>
