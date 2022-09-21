@@ -13,7 +13,13 @@ const statusTiers: Record<string, number> = {
   Alpha: 3,
 };
 
-function Category({ name, repos, index }: { name: string; repos: readonly Repository[]; index: number }) {
+interface CategoryProps {
+  name: string;
+  repos: readonly Repository[];
+  index: number;
+}
+
+function Category({ name, repos, index }: CategoryProps) {
   const color = colors[index % colors.length];
   const byStatus = groupBy([...repos].reverse(), (s) => s.status || 'Sketch');
   const statusesInOrder = sortBy(Object.keys(byStatus), (s) => statusTiers[s] || 99);
@@ -41,11 +47,55 @@ function Category({ name, repos, index }: { name: string; repos: readonly Reposi
 
 export default function Repos() {
   const { categories } = data;
-  const categoryList = Object.keys(categories).sort();
+  const languages = React.useMemo(() => {
+    try {
+      return Array.from(
+        new Set(Object.values(categories).flatMap((repos) => repos.map((r) => r.language ?? 'Unknown'))),
+      ).sort();
+    } catch (e) {
+      // Assume no flatMap
+      return [];
+    }
+  }, [categories]);
+  const [languageFilter, setLanguageFilter] = React.useState<string | null>(null);
+
+  const categoryList = React.useMemo(() => {
+    const filtered: [string, Repository[]][] = [];
+    Object.keys(categories)
+      .sort()
+      .forEach((name) => {
+        const cat = categories[name];
+        const filteredRepos = cat.filter((repo) => languageFilter === null || repo.language === languageFilter);
+        if (filteredRepos.length > 0) {
+          filtered.push([name, filteredRepos]);
+        }
+      });
+    return filtered;
+  }, [categories, languageFilter]);
+
   return (
     <>
-      {categoryList.map((category, i) => (
-        <Category name={category} repos={categories[category]} index={i} key={category} />
+      {languages.length > 0 && (
+        <p>
+          <label htmlFor="language-filter">
+            Filter by language:{' '}
+            <select
+              name="language-filter"
+              value={languageFilter || ''}
+              onChange={(e) => setLanguageFilter(e.target.value || null)}
+            >
+              <option value="">All</option>
+              {[...languages].sort().map((language) => (
+                <option key={language} value={language}>
+                  {language}
+                </option>
+              ))}
+            </select>
+          </label>
+        </p>
+      )}
+      {categoryList.map(([category, repos], i) => (
+        <Category name={category} repos={repos} index={i} key={category} />
       ))}
     </>
   );

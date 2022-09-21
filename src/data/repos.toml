@@ -102,7 +102,7 @@ status = 'Alpha'
 [djembe]
 description = "Django template toy environment (for learning!)"
 url = 'https://github.com/akx/djembe'
-language = 'Python/Django'
+language = 'Python'
 date = '2014-01-23'
 category = 'Presentations'
 status = 'Beta'
@@ -351,7 +351,7 @@ Extract "Now playing" from Winamp/Foobar2000 into text files and/or images.
 Built for OBS-Studio, but could be useful for other uses.
 """
 url = 'https://github.com/akx/npdeck'
-language = 'C#/WPF'
+language = 'C#'
 platform = "Windows"
 date = '2015-09-20'
 category = 'Tools'
