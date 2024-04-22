@@ -2128,3 +2128,256 @@ url = 'https://github.com/akx/wuffle'
 language = 'TypeScript'
 date = '2022-09-14'
 category = 'Tools'
+
+[sanamanuli]
+description = "Sanamanuli on pieni kissaeläin joka auttaa sinua pelaamaan Sanulia."
+homepage = 'https://akx.github.io/sanamanuli/'
+url = 'https://github.com/akx/sanamanuli'
+language = 'TypeScript'
+date = '2022-01-04'
+category = 'Games'
+
+[simaa]
+description = "A sima soundboard."
+homepage = 'https://akx.github.io/simaa/'
+url = 'https://github.com/akx/simaa'
+language = 'TypeScript'
+date = '2022-04-27'
+category = 'Audio'
+
+[lerppu]
+description = "Tracks storage device prices in Finnish web stores."
+homepage = 'https://akx.github.io/lerppu/'
+url = 'https://github.com/akx/lerppu'
+language = 'Python'
+date = '2022-07-26'
+category = 'Tools'
+
+[wundernut-12]
+
+[aws-inventor]
+description = "Inventor-izes AWS resources for e.g. SOC2 compliance use."
+url = 'https://github.com/akx/aws-inventor'
+language = 'Python'
+date = '2022-09-21'
+category = 'Tools'
+
+[svg-wave]
+description = "Generates waves over SVG paths."
+homepage = 'https://akx.github.io/svg-wave/'
+url = 'https://github.com/akx/svg-wave'
+language = 'TypeScript'
+date = '2022-10-04'
+category = 'Tools'
+
+[sensirion-ble]
+description = "Parser for Sensirion BLE devices."
+url = 'https://github.com/akx/sensirion-ble'
+language = 'Python'
+date = '2022-11-19'
+category = 'Home Automation'
+
+[fadio]
+description = "Generate a frame-blended animation from a set of images"
+url = 'https://github.com/akx/fadio'
+language = 'Python'
+date = '2022-12-02'
+category = 'Graphics'
+
+[synkka]
+description = "Some `asyncio` helpers. Not as bleak as it sounds."
+url = 'https://github.com/akx/synkka'
+language = 'Python'
+date = '2022-12-15'
+category = 'Libraries'
+
+[smolsaml]
+description = "A very minimal SAML 2.0 SP implementation for modern Python versions."
+url = 'https://github.com/akx/smolsaml'
+language = 'Python'
+date = '2022-12-19'
+category = 'Libraries'
+
+[aioruuvigateway]
+description = "An asyncio-native library for requesting data from a Ruuvi Gateway."
+url = 'https://github.com/akx/aioruuvigateway'
+language = 'Python'
+date = '2022-12-30'
+category = 'Home Automation'
+
+[pyproject-migrator]
+description = "Convert setup.cfg, etc. to pyproject.toml files"
+url = 'https://github.com/akx/pyproject-migrator'
+language = 'Python'
+date = '2023-01-17'
+category = 'Development'
+
+[nurin]
+description = "Taasko se netti on nurin?"
+url = 'https://github.com/akx/nurin'
+language = 'Python'
+date = '2023-02-07'
+category = 'Tools'
+
+[gha-tools]
+description = "Tools for working with GitHub Actions"
+url = 'https://github.com/akx/gha-tools'
+language = 'Python'
+date = '2023-02-14'
+category = 'Development'
+
+[ruff-usage-aggregate]
+description = "ruff-usage-aggregate"
+url = 'https://github.com/akx/ruff-usage-aggregate'
+language = 'Python'
+date = '2023-03-08'
+category = 'Development'
+
+[glorb]
+description = "Generates an STL mesh of the globe, with height data."
+url = 'https://github.com/akx/glorb'
+language = 'Python'
+date = '2023-03-27'
+category = 'Graphics'
+
+[clinton]
+description = "A bill processor"
+url = 'https://github.com/akx/clinton'
+language = 'Python'
+date = '2023-04-24'
+category = 'Tools'
+
+[solar]
+description = "Solar time map"
+homepage = 'https://akx.github.io/solar/'
+url = 'https://github.com/akx/solar'
+language = 'TypeScript'
+date = '2023-04-26'
+category = 'Tools'
+
+[ggify]
+description = "Tool to download models from Huggingface Hub and convert them to GGML for llama.cpp"
+url = 'https://github.com/akx/ggify'
+language = 'Python'
+date = '2023-05-16'
+category = 'Tools'
+
+[handi]
+description = "Turns your hands into a MIDI controller."
+url = 'https://github.com/akx/handi'
+language = 'Python'
+date = '2023-05-23'
+category = 'Audio'
+
+[ruff-report]
+description = "Slice and dice your Ruff reports"
+homepage = 'https://akx.github.io/ruff-report/'
+url = 'https://github.com/akx/ruff-report'
+language = 'TypeScript'
+date = '2023-06-13'
+category = 'Development'
+
+[satamanosturi]
+description = "Moves Docker images"
+url = 'https://github.com/akx/satamanosturi'
+language = 'Python'
+date = '2023-06-28'
+category = 'Development'
+
+[honkshoo]
+description = "Honkshoo reads, converts and visualizes data from CPAP machines."
+url = 'https://github.com/akx/honkshoo'
+language = 'Python'
+date = '2023-07-05'
+category = 'Tools'
+
+[hetkinen]
+description = "A sampler."
+homepage = 'https://akx.github.io/hetkinen/'
+url = 'https://github.com/akx/hetkinen'
+language = 'TypeScript'
+date = '2023-08-24'
+category = 'Audio'
+
+[illuminatrix]
+description = "Fancy light schemes for your home"
+url = 'https://github.com/akx/illuminatrix'
+language = 'TypeScript'
+date = '2023-08-30'
+category = 'Home Automation'
+
+[torchsde-brownian]
+description = "Brownian motion generation code from torchsde version 0.2.5 as a standalone package"
+url = 'https://github.com/akx/torchsde-brownian'
+language = 'Python'
+date = '2023-09-26'
+category = 'Libraries'
+
+[pylint-to-ruff]
+description = "introspect your Pylint configuration and figure out what Ruff rules to enable or disable"
+url = 'https://github.com/akx/pylint-to-ruff'
+language = 'Python'
+date = '2023-09-26'
+category = 'Development'
+
+[holey]
+description = "Generates speaker grille patterns."
+homepage = 'https://akx.github.io/holey/'
+url = 'https://github.com/akx/holey'
+language = 'TypeScript'
+date = '2023-10-01'
+category = 'Graphics'
+
+[pip-local-cache-index]
+description = "Install wheels from your local pip HTTP cache"
+url = 'https://github.com/akx/pip-local-cache-index'
+language = 'Python'
+date = '2023-10-10'
+category = 'Development'
+
+[lcm_test]
+description = "Quick and dirty Streamlit UI for Latent Consistency Models"
+url = 'https://github.com/akx/lcm_test'
+language = 'Python'
+date = '2023-10-24'
+category = 'Graphics'
+
+[openconnect-socks-proxy]
+description = "Dockerfile + Python start script to configure an openconnect + tunsocks SOCKS proxy."
+url = 'https://github.com/akx/openconnect-socks-proxy'
+language = 'Python'
+date = '2023-11-23'
+category = 'Uncategorized'
+
+[res-helper]
+description = "Resolution helper for e.g. Stable Diffusion"
+homepage = 'https://akx.github.io/res-helper/'
+url = 'https://github.com/akx/res-helper'
+language = 'TypeScript'
+date = '2023-12-12'
+category = 'Graphics'
+
+[django-model-size-test]
+
+[preco]
+description = "A partial reimplementation of pre-commit in Rust"
+url = 'https://github.com/akx/preco'
+language = 'Rust'
+date = '2024-02-19'
+category = 'Development'
+
+[polykone]
+description = "Define polygons (like imagemaps of yore) on an image"
+url = 'https://github.com/akx/polykone'
+language = 'TypeScript'
+date = '2024-03-14'
+category = 'Graphics'
+
+[tokei-tar]
+description = "Small wrapper around tokei to allow reading directly from a TAR archive"
+url = 'https://github.com/akx/tokei-tar'
+language = 'Rust'
+date = '2024-04-17'
+category = 'Development'
+
+
