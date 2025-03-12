@@ -5,12 +5,14 @@ import colors from '../data/colors.json';
 import type { Repository } from '../data/types';
 import { groupBy, sortBy } from '../helpers.ts';
 
-const data = massageReposData();
+const { categories, count } = massageReposData();
 
 const statusTiers: Record<string, number> = {
   Release: 1,
   Beta: 2,
   Alpha: 3,
+  Sketch: 4,
+  Deprecated: 900,
 };
 
 interface CategoryProperties {
@@ -20,20 +22,20 @@ interface CategoryProperties {
 }
 
 function Category({ name, repos, index }: CategoryProperties) {
-  const color = colors[index % colors.length];
+  const { hex } = colors[index % colors.length];
   const byStatus = groupBy([...repos].reverse(), (s) => s.status || 'Sketch');
   const statusesInOrder = sortBy(Object.keys(byStatus), (s) => statusTiers[s] || 99);
 
   return (
-    <div className="category" style={{ background: color.hex }} id={name.toLowerCase()}>
-      <h2 className="category-header" style={{ color: color.hex }}>
+    <div className="category" style={{ background: hex }} id={name.toLowerCase()}>
+      <h2 className="category-header p-2 text-center bg-black/80 text-2xl" style={{ color: hex }}>
         {name}
       </h2>
-      <div className="category-body">
+      <div className="category-body p-2 flex flex-col gap-4">
         {statusesInOrder.map((status) => (
           <div className="status-tier" key={status}>
-            <h3>{status}</h3>
-            <div className="status-tier-body">
+            <h3 className="text-xl font-bold pb-1">{status}</h3>
+            <div className="status-tier-body grid-cols-2 lg:grid-cols-4 grid gap-2 justify-center">
               {byStatus[status].map((repo) => (
                 <RepoCard key={repo.name} repo={repo} />
               ))}
@@ -46,7 +48,6 @@ function Category({ name, repos, index }: CategoryProperties) {
 }
 
 export default function Repos() {
-  const { categories } = data;
   const languages: [string, number][] = React.useMemo(() => {
     const languageCounts: Record<string, number> = {};
     for (const repos of Object.values(categories)) {
@@ -81,18 +82,24 @@ export default function Repos() {
         <p>
           <label htmlFor="language-filter">
             Filter by language:{' '}
-            <select
-              name="language-filter"
-              value={languageFilter || ''}
-              onChange={(event) => setLanguageFilter(event.target.value || null)}
-            >
-              <option value="">All</option>
+            <span className="*:px-2">
+              <label>
+                <input name="language-filter" type="radio" value="" onChange={() => setLanguageFilter(null)} /> All (
+                {count})
+              </label>
               {languages.map(([language, count]) => (
-                <option key={language} value={language}>
+                <label>
+                  <input
+                    type="radio"
+                    name="language-filter"
+                    key={language}
+                    value={language}
+                    onChange={(event) => setLanguageFilter(event.target.value || null)}
+                  />{' '}
                   {language} ({count})
-                </option>
+                </label>
               ))}
-            </select>
+            </span>
           </label>
         </p>
       )}

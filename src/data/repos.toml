@@ -55,7 +55,6 @@ url = 'https://github.com/akx/Notifications'
 date = '2013-02 (and subsequent updates)'
 category = 'Audio'
 status = 'Release'
-language = 'n/a'
 
 [noisykeys]
 description = "A little C# app that mutes microphones when noisy keyboards are abound."
@@ -958,7 +957,6 @@ url = 'https://github.com/akx/Convolutions'
 date = '2017-09-10'
 category = 'Audio'
 status = 'Release'
-language = 'n/a'
 
 [uwsgi-socket-example]
 

@@ -8,7 +8,7 @@ function isRepository(x: Repository | Empty): x is Repository {
   return !!x.category;
 }
 
-export default function massageReposData(): { categories: Record<string, Repository[]> } {
+export default function massageReposData(): { categories: Record<string, Repository[]>; count: number } {
   for (const key of Object.keys(data)) {
     data[key].name = data[key].name || key;
   }
@@ -16,5 +16,5 @@ export default function massageReposData(): { categories: Record<string, Reposit
     .filter(isRepository)
     .sort((a, b) => a.date.localeCompare(b.date));
   const categories = groupBy(repos, (r) => r.category);
-  return { categories };
+  return { categories, count: repos.length };
 }
