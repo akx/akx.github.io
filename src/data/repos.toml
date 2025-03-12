@@ -2380,4 +2380,103 @@ language = 'Rust'
 date = '2024-04-17'
 category = 'Development'
 
+[sukkalaatikko]
+description = "Proxies UNIX socket requests"
+url = 'https://github.com/akx/sukkalaatikko'
+language = 'Python'
+date = '2023-05-30'
+category = 'Development'
+
+[tska]
+description = "TypeScript utilities"
+url = 'https://github.com/akx/tska'
+language = 'Python'
+date = '2024-05-07'
+category = 'Development'
+
+[kuvis]
+description = "Small webapp to upload images, show them."
+url = 'https://github.com/akx/kuvis'
+language = 'Python'
+date = '2024-07-03'
+category = 'Tools'
+
+[tud_sumo]
+
+[geosplot]
+description = "Join TSV data onto GeoJSON features"
+homepage = 'https://akx.github.io/geosplot/'
+url = 'https://github.com/akx/geosplot'
+language = 'TypeScript'
+date = '2024-09-05'
+category = 'Tools'
+
+[hatch-calver]
+description = "CalVer versioning scheme for Hatch"
+homepage = 'https://pypi.org/project/hatch-calver'
+url = 'https://github.com/akx/hatch-calver'
+language = 'Python'
+date = '2024-09-16'
+category = 'Development'
+
+[elb-log-transform]
+
+[ollama-dl]
+description = "Download models from the Ollama library, without Ollama"
+url = 'https://github.com/akx/ollama-dl'
+language = 'Python'
+date = '2024-09-26'
+category = 'AI'
+
+[calendar-wheel]
+description = "Proof of concept for a calendar wheel like PlanDisc"
+homepage = 'https://akx.github.io/calendar-wheel/'
+url = 'https://github.com/akx/calendar-wheel'
+language = 'TypeScript'
+date = '2024-10-23'
+category = 'Web'
+
+[perfnetto]
+description = "Perfnetto wraps the Perfetto tracing SDK to make it possible to trace Python code."
+url = 'https://github.com/akx/perfnetto'
+language = 'C++'
+date = '2024-11-01'
+category = 'Development'
+
+[keissi]
+
+[discord-emoji]
+description = "Download emoji from Discord guilds"
+url = 'https://github.com/akx/discord-emoji'
+language = 'Python'
+date = '2024-11-16'
+category = 'Tools'
+status = 'Production'
+
+[so79223333]
+
+[pre-commit-uv-action]
+description = "A GitHub action to run pre-commit using uv via setup-uv and pre-commit-uv"
+url = 'https://github.com/akx/pre-commit-uv-action'
+language = 'None'
+date = '2024-12-14'
+category = 'Development'
+status = 'Production'
+
+[bindl]
+description = "Download & repackage binaries"
+url = 'https://github.com/akx/bindl'
+language = 'Python'
+date = '2025-01-20'
+category = 'Tools'
+status = 'Production'
+
+[talsi]
+description = "Fast local SQLite-backed key-value storage for Python"
+homepage = 'https://pypi.org/project/talsi/'
+url = 'https://github.com/akx/talsi'
+language = 'Rust'
+date = '2025-02-27'
+category = 'Libraries'
+status = 'Beta'
 
