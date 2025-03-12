@@ -1,0 +1,9 @@
+---
+import Repos from '../components/Repos';
+import Layout from '../layouts/Layout.astro';
+import Hello from '../components/Hello.mdx';
+---
+<Layout>
+    <Hello/>
+    <Repos client:load/>
+</Layout>

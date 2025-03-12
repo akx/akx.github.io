@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { groupBy, sortBy } from 'lodash';
 import RepoCard from './RepoCard';
 import massageReposData from '../data/reposData';
 import colors from '../data/colors.json';
-import { Repository } from '../data/types';
+import type { Repository } from '../data/types';
+import { groupBy, sortBy } from '../helpers.ts';
 
 const data = massageReposData();
 
@@ -13,13 +13,13 @@ const statusTiers: Record<string, number> = {
   Alpha: 3,
 };
 
-interface CategoryProps {
+interface CategoryProperties {
   name: string;
   repos: readonly Repository[];
   index: number;
 }
 
-function Category({ name, repos, index }: CategoryProps) {
+function Category({ name, repos, index }: CategoryProperties) {
   const color = colors[index % colors.length];
   const byStatus = groupBy([...repos].reverse(), (s) => s.status || 'Sketch');
   const statusesInOrder = sortBy(Object.keys(byStatus), (s) => statusTiers[s] || 99);
@@ -49,12 +49,12 @@ export default function Repos() {
   const { categories } = data;
   const languages: [string, number][] = React.useMemo(() => {
     const languageCounts: Record<string, number> = {};
-    Object.values(categories).forEach((repos) => {
-      repos.forEach((repo) => {
+    for (const repos of Object.values(categories)) {
+      for (const repo of repos) {
         const language = repo.language ?? 'Unknown';
         languageCounts[language] = (languageCounts[language] || 0) + 1;
-      });
-    });
+      }
+    }
     return Object.keys(languageCounts)
       .sort()
       .map((lang) => [lang, languageCounts[lang]]);
@@ -63,17 +63,15 @@ export default function Repos() {
 
   const categoryList = React.useMemo(() => {
     const filtered: [string, Repository[]][] = [];
-    Object.keys(categories)
-      .sort()
-      .forEach((name) => {
-        const cat = categories[name];
-        const filteredRepos = cat.filter(
-          (repo) => languageFilter === null || (repo.language ?? 'Unknown') === languageFilter,
-        );
-        if (filteredRepos.length > 0) {
-          filtered.push([name, filteredRepos]);
-        }
-      });
+    for (const name of Object.keys(categories).sort()) {
+      const cat = categories[name];
+      const filteredRepos = cat.filter(
+        (repo) => languageFilter === null || (repo.language ?? 'Unknown') === languageFilter,
+      );
+      if (filteredRepos.length > 0) {
+        filtered.push([name, filteredRepos]);
+      }
+    }
     return filtered;
   }, [categories, languageFilter]);
 
@@ -86,7 +84,7 @@ export default function Repos() {
             <select
               name="language-filter"
               value={languageFilter || ''}
-              onChange={(e) => setLanguageFilter(e.target.value || null)}
+              onChange={(event) => setLanguageFilter(event.target.value || null)}
             >
               <option value="">All</option>
               {languages.map(([language, count]) => (
@@ -98,8 +96,8 @@ export default function Repos() {
           </label>
         </p>
       )}
-      {categoryList.map(([category, repos], i) => (
-        <Category name={category} repos={repos} index={i} key={category} />
+      {categoryList.map(([category, repos], index) => (
+        <Category name={category} repos={repos} index={index} key={category} />
       ))}
     </>
   );

@@ -1,8 +1,6 @@
-import { sortBy, groupBy } from 'lodash';
-// eslint-disable-next-line import/no-unresolved
-// @ts-ignore
-import rawData from '!toml-loader!./repos.toml';
-import { Empty, Repository } from './types';
+import { groupBy } from '../helpers.ts';
+import rawData from './repos.toml';
+import type { Empty, Repository } from './types';
 
 const data: Record<string, Repository | Empty> = rawData;
 
@@ -11,10 +9,12 @@ function isRepository(x: Repository | Empty): x is Repository {
 }
 
 export default function massageReposData(): { categories: Record<string, Repository[]> } {
-  Object.keys(data).forEach((key) => {
+  for (const key of Object.keys(data)) {
     data[key].name = data[key].name || key;
-  });
-  const repos = sortBy(Object.values(data).filter(isRepository), 'date');
-  const categories = groupBy(repos, 'category');
+  }
+  const repos = Object.values(data)
+    .filter(isRepository)
+    .sort((a, b) => a.date.localeCompare(b.date));
+  const categories = groupBy(repos, (r) => r.category);
   return { categories };
 }
