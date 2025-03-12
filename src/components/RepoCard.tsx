@@ -1,12 +1,11 @@
 import * as React from 'react';
 import Markdown from 'react-markdown';
-import Image from 'next/future/image';
 import PythonLogo from '../images/python.svg';
 import HTMLLogo from '../images/html.svg';
 import JSLogo from '../images/js.svg';
 import TSLogo from '../images/ts.svg';
 import CSharpLogo from '../images/csharp.svg';
-import { Repository } from '../data/types';
+import type { Repository } from '../data/types';
 
 const ymdRe = /^([0-9]{4})-([0-9]{2})(?:-([0-9]{2}))?$/;
 
@@ -27,22 +26,21 @@ function getDateBadge(date: string) {
 const LANGUAGE_BADGE_WIDTH = 20;
 
 function getLanguageBadge(language: string | undefined) {
-  // eslint-disable-next-line no-param-reassign
   language = `${language}`.toLowerCase();
   if (language.includes('python')) {
-    return <Image src={PythonLogo} alt="Python" width={LANGUAGE_BADGE_WIDTH} />;
+    return <img src={PythonLogo.src} alt="Python" width={LANGUAGE_BADGE_WIDTH} />;
   }
   if (language === 'html') {
-    return <Image src={HTMLLogo} alt="HTML" width={LANGUAGE_BADGE_WIDTH} />;
+    return <img src={HTMLLogo.src} alt="HTML" width={LANGUAGE_BADGE_WIDTH} />;
   }
   if (language === 'javascript') {
-    return <Image src={JSLogo} alt="JavaScript" width={LANGUAGE_BADGE_WIDTH} />;
+    return <img src={JSLogo.src} alt="JavaScript" width={LANGUAGE_BADGE_WIDTH} />;
   }
   if (language === 'typescript') {
-    return <Image src={TSLogo} alt="TypeScript" width={LANGUAGE_BADGE_WIDTH} />;
+    return <img src={TSLogo.src} alt="TypeScript" width={LANGUAGE_BADGE_WIDTH} />;
   }
   if (language.includes('c#')) {
-    return <Image src={CSharpLogo} alt="C#" width={LANGUAGE_BADGE_WIDTH} />;
+    return <img src={CSharpLogo.src} alt="C#" width={LANGUAGE_BADGE_WIDTH} />;
   }
   return null;
 }
@@ -54,9 +52,9 @@ function MultiLink({ url, text }: { url: string | string[] | undefined; text: st
     return (
       <>
         {text}{' '}
-        {urls.map((u, i) => (
+        {urls.map((u, index) => (
           <a key={u} href={u} target="_blank">
-            {i + 1}
+            {index + 1}
           </a>
         ))}
       </>

@@ -2,6 +2,7 @@
 *.pem
 *.tsbuildinfo
 .DS_Store
+.astro/
 .env*
 .idea
 .pnp.js
@@ -12,5 +13,6 @@
 /coverage
 /out/
 /stashh
+dist/
 node_modules
 repos.json
