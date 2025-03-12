@@ -2197,6 +2197,7 @@ url = 'https://github.com/akx/smolsaml'
 language = 'Python'
 date = '2022-12-19'
 category = 'Libraries'
+status = 'Release'
 
 [aioruuvigateway]
 description = "An asyncio-native library for requesting data from a Ruuvi Gateway."
@@ -2451,7 +2452,7 @@ url = 'https://github.com/akx/discord-emoji'
 language = 'Python'
 date = '2024-11-16'
 category = 'Tools'
-status = 'Production'
+status = 'Release'
 
 [so79223333]
 
@@ -2461,7 +2462,7 @@ url = 'https://github.com/akx/pre-commit-uv-action'
 language = 'None'
 date = '2024-12-14'
 category = 'Development'
-status = 'Production'
+status = 'Release'
 
 [bindl]
 description = "Download & repackage binaries"
@@ -2469,7 +2470,7 @@ url = 'https://github.com/akx/bindl'
 language = 'Python'
 date = '2025-01-20'
 category = 'Tools'
-status = 'Production'
+status = 'Release'
 
 [talsi]
 description = "Fast local SQLite-backed key-value storage for Python"

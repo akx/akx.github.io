@@ -1,17 +1,18 @@
+@import '@fontsource/ibm-plex-mono';
+@import '@fontsource-variable/ibm-plex-sans';
+
 html {
   font-size: 1em;
 }
 
-@font-face {
-  font-family: 'SanaSans';
-  font-style: normal;
-  font-weight: normal;
-  src: url('./SanaSans-Regular.otf');
+main {
+  max-width: 100ch;
+  margin: 0 auto;
 }
 
 body {
   background-color: #f5f6fa;
-  font-family: SanaSans, sans-serif;
+  font-family: 'IBM Plex Sans Variable', sans-serif;
   font-weight: 400;
   line-height: 1.45;
   color: #222;
@@ -77,6 +78,7 @@ h4 {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .status-tier h3 {
@@ -85,7 +87,6 @@ h4 {
 
 .repo-card {
   /*border: 1px solid rgba(0, 0, 0, 0.3);*/
-  margin: 0.5rem;
   padding: 0.5rem;
   background: rgba(255, 255, 255, 0.65);
   flex: 1;
@@ -95,16 +96,16 @@ h4 {
 
 .repo-header {
   margin: 0;
-  padding: 0.5rem 0;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .repo-header img {
   height: 1.5rem;
   display: block;
-  padding: 0 0.5rem;
 }
 
 .repo-card h3 {
