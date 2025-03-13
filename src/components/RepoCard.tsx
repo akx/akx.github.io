@@ -105,7 +105,13 @@ export default function RepoCard({ repo }: { repo: Repository }) {
       <div className="prose p-2 leading-tight min-h-20">
         <Markdown>{description || 'Who knows what this thing does...'}</Markdown>
       </div>
-      <dl className="p-2 grid grid-cols-[1fr_2fr] text-sm">
+      <dl className="p-2 grid grid-cols-[1fr_2fr] text-sm leading-tight">
+        {status ? (
+          <>
+            <dt>Status</dt>
+            <dd>{status}</dd>
+          </>
+        ) : null}
         {date ? (
           <>
             <dt>Date</dt>
