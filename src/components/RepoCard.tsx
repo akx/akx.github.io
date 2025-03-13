@@ -8,6 +8,8 @@ import CSharpLogo from '../images/csharp.svg';
 import GitHubLogo from '../images/gh.svg';
 import RustLogo from '../images/rust.svg';
 import type { Repository } from '../data/types';
+import cx from 'clsx';
+import { statusTiers } from '../data/consts';
 
 const ymdRe = /^([0-9]{4})-([0-9]{2})(?:-([0-9]{2}))?$/;
 
@@ -82,16 +84,25 @@ function MultiLink({ url, text }: { url: string | string[] | undefined; text: st
 }
 
 export default function RepoCard({ repo }: { repo: Repository }) {
-  const { date, description, download, homepage, language, name, platform, status, url } = repo;
+  const { date, description, download, homepage, language, name, platform, status: rawStatus, url } = repo;
   const dateBadge = getDateBadge(date);
   const languageBadge = getLanguageBadge(language);
+  const status = rawStatus || 'Sketch';
   return (
-    <div className="repo-card bg-white/65 border-b-black/65 border" id={name.toLowerCase()}>
+    <div
+      className={cx(
+        'repo-card bg-white/65 border-b-black/65 border',
+        statusTiers[status] >= 900 ? 'opacity-50 hover:opacity-100' : null,
+      )}
+      id={name.toLowerCase()}
+    >
       <div className="repo-header min-h-10 p-2 border-b-black/65 border-b gap-2 flex justify-between items-center leading-none">
         <h3 className="font-semibold">{name}</h3>
+        <div className="grow"></div>
+        {status === 'Release' ? null : <span className="text-sm">{status}</span>}
         {languageBadge}
       </div>
-      <div className="prose p-2 leading-tight">
+      <div className="prose p-2 leading-tight min-h-20">
         <Markdown>{description || 'Who knows what this thing does...'}</Markdown>
       </div>
       <dl className="p-2 grid grid-cols-[1fr_2fr] text-sm">

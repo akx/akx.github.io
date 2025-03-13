@@ -4,17 +4,9 @@ import massageReposData from '../data/reposData';
 import colors from '../data/colors.json';
 import type { Repository } from '../data/types';
 import { groupBy, sortBy } from '../helpers.ts';
+import { statusTiers } from '../data/consts.ts';
 
 const { categories, count } = massageReposData();
-
-const statusTiers: Record<string, number> = {
-  Release: 1,
-  Beta: 2,
-  Alpha: 3,
-  Sketch: 4,
-  Deprecated: 900,
-  Archived: 901,
-};
 
 interface CategoryProperties {
   name: string;
@@ -37,15 +29,12 @@ function Category({ name, repos, index }: CategoryProperties) {
       <h2 className="category-header p-2 text-center bg-black/80 text-2xl" style={{ color: hex }}>
         {name}
       </h2>
-      <div className="category-body p-2 flex flex-col gap-4">
+      <div className="category-body p-2 flex flex-col gap-2">
         {statusesInOrder.map((status) => (
-          <div className="status-tier" key={status}>
-            <h3 className="text-xl font-bold pb-1">{status}</h3>
-            <div className="status-tier-body grid-cols-2 lg:grid-cols-4 grid gap-2 justify-center">
-              {byStatus[status].map((repo) => (
-                <RepoCard key={repo.name} repo={repo} />
-              ))}
-            </div>
+          <div className="grid-cols-2 lg:grid-cols-4 grid gap-2 justify-center" key={status}>
+            {byStatus[status].map((repo) => (
+              <RepoCard key={repo.name} repo={repo} />
+            ))}
           </div>
         ))}
       </div>
