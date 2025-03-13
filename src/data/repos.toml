@@ -151,7 +151,7 @@ homepage = 'https://akx.github.io/ix'
 language = 'JavaScript'
 date = '2014-06-17'
 category = 'Graphics'
-status = 'Beta'
+status = 'Release'
 
 [gravelly-js]
 description = "Object-oriented API for generating SVG path strings"
@@ -269,9 +269,8 @@ description = "Lazy Slack archiver"
 url = 'https://github.com/akx/slacktrack'
 language = 'JavaScript'
 date = '2015-06-09'
-category = 'Other stuff'
+category = 'Data Hoarding'
 status = 'Release'
-
 
 [tcd]
 name = "tcd"
@@ -477,7 +476,7 @@ homepage = 'https://akxht.github.io/xerador'
 url = 'https://github.com/akx/xerador'
 language = 'JavaScript'
 date = '2015-11-01'
-category = 'Other stuff'
+category = 'Toys'
 status = 'Release'
 
 [abyss]
@@ -548,13 +547,13 @@ status = 'Archived'
 
 [umbra]
 
-[homekit]
-description = "Backend & frontend for a tablet-based home \"automation\" display"
-url = 'https://github.com/akx/homekit'
-language = 'JavaScript'
-date = '2016-05-08'
-category = 'IoT'
-status = 'Alpha'
+#[homekit]
+#description = "Backend & frontend for a tablet-based home \"automation\" display"
+#url = 'https://github.com/akx/homekit'
+#language = 'JavaScript'
+#date = '2016-05-08'
+#category = 'IoT'
+#status = 'Alpha'
 
 [mixdesk]
 description = "Electron-based Mixcloud.com client"
@@ -577,7 +576,7 @@ description = "Tiny HTTP IoT data logger"
 url = 'https://github.com/akx/iotlog'
 language = 'JavaScript'
 date = '2016-06-18'
-category = 'IoT'
+category = 'Home Automation'
 status = 'Release'
 
 [foofdf]
@@ -660,7 +659,7 @@ description = "Kinetic triangles in SVG"
 homepage = [
     'https://akx.github.io/tritri/tritri.html',
     'https://akx.github.io/tritri/tritri2.html',
-    'https://akx.github.io/tritri/tritr3.html'
+    'https://akx.github.io/tritri/tritri3.html',
    ]
 url = 'https://github.com/akx/tritri'
 language = 'JavaScript'
@@ -690,7 +689,7 @@ description = "Unicode map on the command line!"
 url = 'https://github.com/akx/uni'
 language = 'Python'
 date = '2016-10-27'
-category = 'Other stuff'
+category = 'Tools'
 status = 'Release'
 
 [neki]
@@ -719,7 +718,7 @@ description = "Goodifying terminals for SSH!"
 url = 'https://github.com/akx/sshw'
 language = 'Python'
 date = '2017-02-01'
-category = 'Other stuff'
+category = 'Tools'
 status = 'Release'
 
 [summarize-sync-io]
@@ -727,7 +726,7 @@ description = "Summarize Node.js --trace-sync-io logs"
 url = 'https://github.com/akx/summarize-sync-io'
 language = 'JavaScript'
 date = '2017-02-10'
-category = 'Other stuff'
+category = 'Development'
 status = 'Release'
 
 [rahe]
@@ -735,7 +734,7 @@ description = "Retrospective personal budgeting"
 url = 'https://github.com/akx/rahe'
 language = 'JavaScript'
 date = '2017-02-23'
-category = 'Other stuff'
+category = 'Data'
 status = 'Beta'
 
 [gifify]
@@ -751,7 +750,7 @@ description = "Yet another DynIP updater"
 url = 'https://github.com/akx/tinydynip'
 language = 'Python'
 date = '2017-03-15'
-category = 'Other stuff'
+category = 'Tools'
 status = 'Release'
 
 [webpack-css-bundle-example]
@@ -849,6 +848,7 @@ status = 'Release'
 [watercolour]
 description = "Watercolour generator"
 url = 'https://github.com/akx/watercolour'
+homepage = 'https://akx.github.io/watercolour/'
 language = 'JavaScript'
 date = '2017-06-06'
 category = 'Graphics'
@@ -1183,7 +1183,7 @@ description = "Utilities for Untappd Supporters to help them analyze their histo
 url = 'https://github.com/akx/untappd-user-stats-tools'
 language = 'Python'
 date = '2018-05-30'
-category = 'Other stuff'
+category = 'Data'
 status = 'Release'
 
 [afsp-mirror]
@@ -1737,7 +1737,7 @@ description = "yhdyssanalogia-digitaalimuunnin"
 url = 'https://github.com/akx/jatkoyhdyssana'
 language = 'Rust'
 date = '2020-09-22'
-category = 'Other stuff'
+category = 'Toys'
 status = 'Release'
 
 [blahfeed]
@@ -1771,7 +1771,7 @@ url = 'https://github.com/akx/intense'
 homepage = 'https://akx.github.io/intense/'
 language = 'JavaScript'
 date = '2020-11-26'
-category = 'Other stuff'
+category = 'Toys'
 status = 'Release'
 
 [aoc2020]
@@ -1826,7 +1826,7 @@ description = 'A simple geocoder for Finnish addresses using public data'
 url = 'https://github.com/akx/fi-geocode'
 language = 'Python'
 date = '2021-01-08'
-category = 'Other stuff'
+category = 'Data'
 status = 'Release'
 
 [pyfastxml]
@@ -1984,7 +1984,11 @@ date = '2021-09-22'
 category = 'Development'
 
 [cde-style]
-description = "Retro."
+description = """
+Explorations into the style of the CDE (Common Desktop Environment).
+
+We used to have an HP-UX workstation with CDE at home.
+"""
 url = 'https://github.com/akx/cde-style'
 language = 'Python'
 date = '2021-09-24'
@@ -2234,11 +2238,17 @@ date = '2023-03-08'
 category = 'Development'
 
 [glorb]
-description = "Generates an STL mesh of the globe, with height data."
+description = """
+Generates an STL mesh of the globe, with height data.
+
+I used this to 3D print the whole world.
+"""
+
 url = 'https://github.com/akx/glorb'
 language = 'Python'
 date = '2023-03-27'
 category = 'Graphics'
+status = "Release"
 
 [clinton]
 description = "A bill processor"
@@ -2327,6 +2337,7 @@ url = 'https://github.com/akx/holey'
 language = 'TypeScript'
 date = '2023-10-01'
 category = 'Graphics'
+status = "Release"
 
 [pip-local-cache-index]
 description = "Install wheels from your local pip HTTP cache"
@@ -2356,6 +2367,7 @@ url = 'https://github.com/akx/res-helper'
 language = 'TypeScript'
 date = '2023-12-12'
 category = 'Graphics'
+status = "Release"
 
 [django-model-size-test]
 
@@ -2373,6 +2385,7 @@ homepage = 'https://akx.github.io/polykone/'
 language = 'TypeScript'
 date = '2024-03-14'
 category = 'Graphics'
+status = "Release"
 
 [tokei-tar]
 description = "Small wrapper around tokei to allow reading directly from a TAR archive"
@@ -2380,6 +2393,7 @@ url = 'https://github.com/akx/tokei-tar'
 language = 'Rust'
 date = '2024-04-17'
 category = 'Development'
+status = "Release"
 
 [sukkalaatikko]
 description = "Proxies UNIX socket requests"

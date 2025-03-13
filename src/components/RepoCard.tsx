@@ -16,9 +16,7 @@ function getDateBadge(date: string) {
   if (ymdMatch) {
     return (
       <span className="date whitespace-nowrap" title={date}>
-        <span className="year">{ymdMatch[1]}</span>
-        <span> &middot; </span>
-        <span className="month">{ymdMatch[2]}</span>
+        {ymdMatch[1]} &middot; {ymdMatch[2]}
       </span>
     );
   }
@@ -71,7 +69,8 @@ function MultiLink({ url, text }: { url: string | string[] | undefined; text: st
   return urls.map((u, index) => (
     <React.Fragment key={u}>
       <dt>
-        {text} {urls.length > 1 ? index + 1 : ''}
+        {text}
+        {urls.length > 1 ? ' ' + (index + 1) : null}
       </dt>
       <dd className="truncate">
         <a href={u} className="underline" target="_blank">
