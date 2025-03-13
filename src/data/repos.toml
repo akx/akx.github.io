@@ -55,6 +55,7 @@ url = 'https://github.com/akx/Notifications'
 date = '2013-02 (and subsequent updates)'
 category = 'Audio'
 status = 'Release'
+language = "Non-code"
 
 [noisykeys]
 description = "A little C# app that mutes microphones when noisy keyboards are abound."
@@ -79,15 +80,15 @@ url = 'https://github.com/akx/requiem'
 language = 'Python'
 date = '2013-09-06'
 category = 'Tools'
-status = 'Beta'
+status = 'Archived'
 
 [stateside]
 description = "Layer comps for HTML."
 url = 'https://github.com/akx/stateside'
 language = 'JavaScript'
 date = '2013-10-21'
-category = 'Webdev'
-status = 'Beta'
+category = 'Development'
+status = 'Archived'
 
 [spotify-tools]
 description = "Tools to convert and mangle Spotify/Last.fm/Youtube music playlists"
@@ -105,7 +106,7 @@ url = 'https://github.com/akx/djembe'
 language = 'Python'
 date = '2014-01-23'
 category = 'Presentations'
-status = 'Beta'
+status = 'Archived'
 
 [Remote]
 description = "Remote system session manager for Windows"
@@ -122,14 +123,14 @@ url = 'https://github.com/akx/bro-py'
 language = 'Python'
 date = '2014-01-25'
 category = 'Tools'
-status = 'Beta'
+status = 'Archived'
 
 [ant1gravity-hearthstone-tier-lists]
 
 [arpy]
 description = "A Web MIDI arpeggiator/step sequencer thing."
 url = 'https://github.com/akx/arpy'
-homepage = 'http://akx.github.io/arpy/arpy.html'
+homepage = 'https://akx.github.io/arpy/arpy.html'
 language = 'JavaScript'
 date = '2014-05-04'
 category = 'Audio'
@@ -146,7 +147,7 @@ status = 'Release'
 [ix]
 description = "Stack-based image processing toy language"
 url = 'https://github.com/akx/ix'
-homepage = 'http://akx.github.io/ix'
+homepage = 'https://akx.github.io/ix'
 language = 'JavaScript'
 date = '2014-06-17'
 category = 'Graphics'
@@ -186,25 +187,25 @@ status = 'Release'
 
 [EFFTHATNOISE]
 description = "A bytebeat livecoding environment."
-homepage = 'http://akx.github.io/EFFTHATNOISE/'
+homepage = 'https://akx.github.io/EFFTHATNOISE/'
 url = 'https://github.com/akx/EFFTHATNOISE'
 language = 'JavaScript'
 date = '2014-09-04'
 category = 'Audio'
 status = 'Release'
 
-[bk-suomi-menu]
-description = "A menu for a fast food chain that only serves their menus as images."
-homepage = 'http://akx.github.io/bk-suomi-menu/'
-url = 'https://github.com/akx/bk-suomi-menu'
-language = 'JavaScript'
-date = '2014-10-01'
-category = 'Data'
-status = 'Beta'
+#[bk-suomi-menu]
+#description = "A menu for a fast food chain that only serves their menus as images."
+#homepage = 'https://akx.github.io/bk-suomi-menu/'
+#url = 'https://github.com/akx/bk-suomi-menu'
+#language = 'JavaScript'
+#date = '2014-10-01'
+#category = 'Data'
+#status = 'Deprecated'
 
 [glitch2]
 description = "HTML5 Canvas glitch effect generator"
-homepage = 'http://akx.github.io/glitch2/'
+homepage = 'https://akx.github.io/glitch2/'
 url = 'https://github.com/akx/glitch2'
 language = 'JavaScript'
 date = '2014-12-27'
@@ -216,12 +217,12 @@ description = "Tiny, fast data grid built on Mithril.js"
 url = 'https://github.com/akx/picotable'
 language = 'JavaScript'
 date = '2015-02-20'
-category = 'Webdev'
+category = 'Development'
 status = 'Beta'
 
 [unimap]
 description = "An Unicode map in the browser!"
-homepage = 'http://akx.github.io/unimap/unimap.html'
+homepage = 'https://akx.github.io/unimap/unimap.html'
 url = 'https://github.com/akx/unimap'
 language = 'JavaScript'
 date = '2015-03-26'
@@ -234,9 +235,7 @@ url = 'https://github.com/akx/smh'
 language = 'JavaScript'
 date = '2015-04-02'
 category = 'Tools'
-status = 'Release'
-
-
+status = 'Deprecated'
 
 [dot3k-c]
 description = "A C library for Pimoroni's Display-O-Tron 3000"
@@ -262,7 +261,7 @@ description = "Figure out licenses for the current Python/NPM/Bower environment"
 url = 'https://github.com/akx/license-grep'
 language = 'Python'
 date = '2015-06-02'
-category = 'Tools'
+category = 'Development'
 status = 'Release'
 
 [slacktrack]
@@ -295,7 +294,7 @@ status = 'Release'
 
 [maskin]
 description = "A cross-modulating synth sequencer toy."
-homepage = 'http://akx.github.io/maskin/'
+homepage = 'https://akx.github.io/maskin/'
 url = 'https://github.com/akx/maskin'
 language = 'JavaScript'
 date = '2015-07-14'
@@ -336,7 +335,7 @@ status = 'Release'
 
 [geoseq]
 description = "Geometry-based web audio sequencer"
-homepage = 'http://akx.github.io/geoseq/'
+homepage = 'https://akx.github.io/geoseq/'
 url = 'https://github.com/akx/geoseq'
 language = 'JavaScript'
 date = '2015-09-06'
@@ -389,7 +388,7 @@ status = 'Release'
 
 [cosmicdrone]
 description = "Subtly oscillating drone machine."
-homepage = 'http://akx.github.io/cosmicdrone'
+homepage = 'https://akx.github.io/cosmicdrone'
 url = 'https://github.com/akx/cosmicdrone'
 language = 'JavaScript'
 date = '2015-10-08'
@@ -406,7 +405,7 @@ status = 'Release'
 
 [chromon]
 description = "Stochastic scale-based sequencing with a sampler"
-homepage = 'http://akx.github.io/chromon'
+homepage = 'https://akx.github.io/chromon'
 url = 'https://github.com/akx/chromon'
 language = 'JavaScript'
 date = '2015-10-10'
@@ -429,7 +428,7 @@ A bookmarklet I made for a friend who was working with visually impaired people,
 with the idea that you could show how hard it is to navigate the Internet if you can
 only see a tiny bit of each page.
 """
-homepage = 'http://akx.github.io/peep'
+homepage = 'https://akx.github.io/peep'
 url = 'https://github.com/akx/peep'
 language = 'HTML'
 date = '2011'
@@ -438,7 +437,7 @@ status = 'Release'
 
 [mashed]
 description = "Full screen JPEG glitch"
-homepage = 'http://akx.github.io/mashed'
+homepage = 'https://akx.github.io/mashed'
 url = 'https://github.com/akx/mashed'
 language = 'JavaScript'
 date = '2013'
@@ -447,7 +446,7 @@ status = 'Release'
 
 [circgen]
 description = "\"Circuit\" image generator I once wrote for a friend."
-homepage = 'http://akx.github.io/circgen'
+homepage = 'https://akx.github.io/circgen'
 url = 'https://github.com/akx/circgen'
 language = 'JavaScript'
 date = '2015-10-14'
@@ -465,7 +464,7 @@ status = 'Beta'
 
 [evotd]
 description = "EvoTD, my contribution to Ludum Dare 24 (2012)"
-homepage = 'http://akx.github.io/evotd'
+homepage = 'https://akx.github.io/evotd'
 url = 'https://github.com/akx/evotd'
 language = 'JavaScript'
 date = '2012'
@@ -474,7 +473,7 @@ status = 'Release'
 
 [xerador]
 description = "A name generator"
-homepage = 'http://akx.github.io/xerador'
+homepage = 'https://akxht.github.io/xerador'
 url = 'https://github.com/akx/xerador'
 language = 'JavaScript'
 date = '2015-11-01'
@@ -497,13 +496,13 @@ date = '2015-12-29'
 category = 'Development'
 status = 'Release'
 
-[nutritious]
-description = "Normalized nutrition data"
-url = 'https://github.com/akx/nutritious'
-language = 'JavaScript'
-date = '2016-01-10'
-category = 'Data'
-status = 'Beta'
+#[nutritious]
+#description = "Normalized nutrition data"
+#url = 'https://github.com/akx/nutritious'
+#language = 'JavaScript'
+#date = '2016-01-10'
+#category = 'Data'
+#status = 'Beta'
 
 [mklocale]
 description = "A small utility to download and combine translations"
@@ -545,7 +544,7 @@ url = 'https://github.com/akx/diskbunny'
 language = 'JavaScript'
 date = '2016-04-10'
 category = 'Other stuff'
-status = 'Alpha'
+status = 'Archived'
 
 [umbra]
 
@@ -570,7 +569,7 @@ description = "Download wallpapers from Reddit"
 url = 'https://github.com/akx/redwall'
 language = 'JavaScript'
 date = '2016-05-31'
-category = 'Tools'
+category = 'Data Hoarding'
 status = 'Release'
 
 [iotlog]
@@ -636,7 +635,7 @@ url = 'https://github.com/akx/pyttipannu'
 language = 'Python'
 date = '2016-09-23'
 category = 'Presentations'
-status = 'Beta'
+status = 'Archived'
 
 [my-video]
 description = "Dynamic kinetic typography video for Childish Gambino's Put It In My Video"
@@ -763,13 +762,13 @@ date = '2017-04-04'
 category = 'Presentations'
 status = 'Release'
 
-[yle-kuntavaalit-2017-data]
-description = "Data about the 2017 Finnish municipal elections, scraped from yle.fi"
-url = 'https://github.com/akx/yle-kuntavaalit-2017-data'
-language = 'Python'
-date = '2017-04-09'
-category = 'Data Science'
-status = 'Release'
+#[yle-kuntavaalit-2017-data]
+#description = "Data about the 2017 Finnish municipal elections, scraped from yle.fi"
+#url = 'https://github.com/akx/yle-kuntavaalit-2017-data'
+#language = 'Python'
+#date = '2017-04-09'
+#category = 'Data Science'
+#status = 'Release'
 
 [docker-chrome-dev]
 description = "Headless Google Chrome! In a container! On a whale!"
@@ -877,7 +876,7 @@ url = 'https://github.com/akx/merge-sms-backup'
 language = 'Python'
 date = '2017-07-03'
 category = 'Tools'
-status = 'Release'
+status = 'Archived'
 
 [ellip]
 description = "Points along an ellipse, deflected like particles"
@@ -957,6 +956,7 @@ url = 'https://github.com/akx/Convolutions'
 date = '2017-09-10'
 category = 'Audio'
 status = 'Release'
+language = "Non-code"
 
 [uwsgi-socket-example]
 
@@ -991,7 +991,7 @@ description = "Expose Django management commands in the admin"
 url = 'https://github.com/akx/django-managerie'
 language = 'Python'
 date = '2017-10-15'
-category = 'Webdev'
+category = 'Development'
 status = 'Release'
 
 [MacKeyLog]
@@ -1076,7 +1076,7 @@ url = 'https://github.com/akx/kartool'
 language = 'Python'
 date = '2017-12-18'
 category = 'Reverse Engineering'
-status = 'Beta'
+status = 'Release'
 
 [bdf-js]
 description = "Render BDF pixel fonts in JavaScript"
@@ -1286,7 +1286,7 @@ description = "Download images from Slack workspaces. (DOWNLOAD ALL THE DOGGOS)"
 url = 'https://github.com/akx/slack-image-download'
 language = 'Python'
 date = '2018-08-17'
-category = 'Tools'
+category = 'Data Hoarding'
 status = 'Release'
 
 [listless]
@@ -1311,7 +1311,7 @@ description = "Extract Apple Color emoji"
 url = 'https://github.com/akx/emoji-extract'
 language = 'Python'
 date = '2018-09-03'
-category = 'Tools'
+category = 'Data Hoarding'
 status = 'Release'
 
 [tem]
@@ -1353,7 +1353,7 @@ description = "slack emoji downloader"
 url = 'https://github.com/akx/slack-emoji'
 language = 'Python'
 date = '2018-12-04'
-category = 'Tools'
+category = 'Data Hoarding'
 status = 'Release'
 
 [hass-ruuvitag]
@@ -1394,7 +1394,7 @@ url = 'https://github.com/akx/so55822235'
 language = 'C'
 date = '2019-04-24'
 category = 'Presentations'
-status = 'Beta'
+status = 'Release'
 
 [mootate]
 description = "Mutate text á la \"All work and no play...\""
@@ -1413,7 +1413,7 @@ category = 'Tools'
 status = 'Beta'
 
 [kcs-vote]
-description = "D'Hondt tally for Desu/C 2017"
+description = "D'Hondt tally voting system for KCS"
 url = 'https://github.com/akx/kcs-vote'
 language = 'Python'
 date = '2019-08-12'
@@ -1510,7 +1510,7 @@ description = "Resource (icon) extraction tools"
 url = 'https://github.com/akx/res-extract'
 language = 'Python'
 date = '2020-01-30'
-category = 'Tools'
+category = 'Data Hoarding'
 status = 'Release'
 
 [emojiscript]
@@ -1544,7 +1544,7 @@ description = "Download sticker packs from Telegram"
 url = 'https://github.com/akx/telegram-sticker-dl'
 language = 'Python'
 date = '2020-03-11'
-category = 'Tools'
+category = 'Data Hoarding'
 status = 'Release'
 
 [wipo-export]
@@ -1712,13 +1712,13 @@ date = '2020-09-01'
 category = 'Development'
 status = 'Release'
 
-[kuntaliitto-scrape]
-description = "Scrapes data from Kuntaliitto's site."
-url = 'https://github.com/akx/kuntaliitto-scrape'
-language = 'Python'
-date = '2020-09-11'
-category = 'Data Science'
-status = 'Beta'
+#[kuntaliitto-scrape]
+#description = "Scrapes data from Kuntaliitto's site."
+#url = 'https://github.com/akx/kuntaliitto-scrape'
+#language = 'Python'
+#date = '2020-09-11'
+#category = 'Data Science'
+#status = 'Beta'
 
 [so63831434]
 
@@ -1768,6 +1768,7 @@ category = 'Other stuff'
 [intense]
 description = "Makes your face look more intense."
 url = 'https://github.com/akx/intense'
+homepage = 'https://akx.github.io/intense/'
 language = 'JavaScript'
 date = '2020-11-26'
 category = 'Other stuff'
@@ -1890,7 +1891,7 @@ description = "Python codemods"
 url = 'https://github.com/akx/python-codemods'
 language = 'Python'
 date = '2021-01-05'
-category = 'Uncategorized'
+category = 'Development'
 
 [docker-interactive-rmi]
 description = "Interactive `rmi` for docker"
@@ -1973,7 +1974,7 @@ description = "File manipulation DSL"
 url = 'https://github.com/akx/foruda'
 language = 'Python'
 date = '2021-09-13'
-category = 'Uncategorized'
+category = 'Tools'
 
 [pkgdiff]
 description = "Generate a succinct diff between two archive files."
@@ -2346,7 +2347,7 @@ description = "Dockerfile + Python start script to configure an openconnect + tu
 url = 'https://github.com/akx/openconnect-socks-proxy'
 language = 'Python'
 date = '2023-11-23'
-category = 'Uncategorized'
+category = 'Tools'
 
 [res-helper]
 description = "Resolution helper for e.g. Stable Diffusion"
@@ -2368,6 +2369,7 @@ category = 'Development'
 [polykone]
 description = "Define polygons (like imagemaps of yore) on an image"
 url = 'https://github.com/akx/polykone'
+homepage = 'https://akx.github.io/polykone/'
 language = 'TypeScript'
 date = '2024-03-14'
 category = 'Graphics'
@@ -2425,7 +2427,8 @@ description = "Download models from the Ollama library, without Ollama"
 url = 'https://github.com/akx/ollama-dl'
 language = 'Python'
 date = '2024-09-26'
-category = 'AI'
+category = 'Data Hoarding'
+status = "Release"
 
 [calendar-wheel]
 description = "Proof of concept for a calendar wheel like PlanDisc"
@@ -2433,7 +2436,7 @@ homepage = 'https://akx.github.io/calendar-wheel/'
 url = 'https://github.com/akx/calendar-wheel'
 language = 'TypeScript'
 date = '2024-10-23'
-category = 'Web'
+category = 'Tools'
 
 [perfnetto]
 description = "Perfnetto wraps the Perfetto tracing SDK to make it possible to trace Python code."
@@ -2449,7 +2452,7 @@ description = "Download emoji from Discord guilds"
 url = 'https://github.com/akx/discord-emoji'
 language = 'Python'
 date = '2024-11-16'
-category = 'Tools'
+category = 'Data Hoarding'
 status = 'Release'
 
 [so79223333]
@@ -2457,7 +2460,7 @@ status = 'Release'
 [pre-commit-uv-action]
 description = "A GitHub action to run pre-commit using uv via setup-uv and pre-commit-uv"
 url = 'https://github.com/akx/pre-commit-uv-action'
-language = 'None'
+language = 'YAML'
 date = '2024-12-14'
 category = 'Development'
 status = 'Release'

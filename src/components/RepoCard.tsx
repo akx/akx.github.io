@@ -5,6 +5,8 @@ import HTMLLogo from '../images/html.svg';
 import JSLogo from '../images/js.svg';
 import TSLogo from '../images/ts.svg';
 import CSharpLogo from '../images/csharp.svg';
+import GitHubLogo from '../images/gh.svg';
+import RustLogo from '../images/rust.svg';
 import type { Repository } from '../data/types';
 
 const ymdRe = /^([0-9]{4})-([0-9]{2})(?:-([0-9]{2}))?$/;
@@ -39,6 +41,9 @@ function getLanguageBadge(language: string | undefined) {
   if (language === 'typescript') {
     return <img src={TSLogo.src} alt="TypeScript" className={languageBadgeClassName} />;
   }
+  if (language === 'rust') {
+    return <img src={RustLogo.src} alt="Rust" className={languageBadgeClassName} />;
+  }
   if (language.includes('c#')) {
     return <img src={CSharpLogo.src} alt="C#" className={languageBadgeClassName} />;
   }
@@ -47,7 +52,15 @@ function getLanguageBadge(language: string | undefined) {
 
 function formatUrl(url: string) {
   if (url.startsWith('https://github.com')) {
-    return url.slice(19);
+    return (
+      <>
+        <img src={GitHubLogo.src} className="h-4 inline pe-1" />
+        {url.slice(19)}
+      </>
+    );
+  }
+  if (url.startsWith('https://akx.github.io/')) {
+    return 'akx.gh.io/' + url.slice(22).replace(/\/$/, '');
   }
   return url;
 }

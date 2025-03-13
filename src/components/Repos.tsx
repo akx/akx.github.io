@@ -13,6 +13,7 @@ const statusTiers: Record<string, number> = {
   Alpha: 3,
   Sketch: 4,
   Deprecated: 900,
+  Archived: 901,
 };
 
 interface CategoryProperties {
@@ -21,13 +22,18 @@ interface CategoryProperties {
   index: number;
 }
 
+function slugifyCategoryName(name: string) {
+  return name.toLowerCase().replaceAll(/\s+/g, '-');
+}
+
 function Category({ name, repos, index }: CategoryProperties) {
   const { hex } = colors[index % colors.length];
   const byStatus = groupBy([...repos].reverse(), (s) => s.status || 'Sketch');
   const statusesInOrder = sortBy(Object.keys(byStatus), (s) => statusTiers[s] || 99);
 
+  const slugified = slugifyCategoryName(name);
   return (
-    <div className="category" style={{ background: hex }} id={name.toLowerCase()}>
+    <div className="category" style={{ background: hex }} id={slugified}>
       <h2 className="category-header p-2 text-center bg-black/80 text-2xl" style={{ color: hex }}>
         {name}
       </h2>
@@ -76,33 +82,48 @@ export default function Repos() {
     return filtered;
   }, [categories, languageFilter]);
 
+  const filter = languages.length > 0 && (
+    <div className="p-2 bg-white">
+      <label htmlFor="language-filter">
+        Filter by language:{' '}
+        <span>
+          <label>
+            <input name="language-filter" type="radio" value="" onChange={() => setLanguageFilter(null)} /> All ({count}
+            )
+          </label>
+          {languages.map(([language, count]) => (
+            <label className="ps-2 inline-block whitespace-nowrap">
+              <input
+                type="radio"
+                name="language-filter"
+                key={language}
+                value={language}
+                onChange={(event) => setLanguageFilter(event.target.value || null)}
+              />{' '}
+              {language} ({count})
+            </label>
+          ))}
+        </span>
+      </label>
+    </div>
+  );
   return (
     <>
-      {languages.length > 0 && (
-        <p>
-          <label htmlFor="language-filter">
-            Filter by language:{' '}
-            <span className="*:px-2">
-              <label>
-                <input name="language-filter" type="radio" value="" onChange={() => setLanguageFilter(null)} /> All (
-                {count})
-              </label>
-              {languages.map(([language, count]) => (
-                <label>
-                  <input
-                    type="radio"
-                    name="language-filter"
-                    key={language}
-                    value={language}
-                    onChange={(event) => setLanguageFilter(event.target.value || null)}
-                  />{' '}
-                  {language} ({count})
-                </label>
-              ))}
-            </span>
-          </label>
-        </p>
-      )}
+      <div className="my-2 grid grid-cols-2 gap-2">
+        {filter}
+        <div className="p-2 bg-white">
+          Skip to category:
+          {categoryList.map(([category]) => (
+            <a
+              href={`#${slugifyCategoryName(category)}`}
+              className="ps-2 inline-block underline whitespace-nowrap"
+              key={category}
+            >
+              {category}
+            </a>
+          ))}
+        </div>
+      </div>
       {categoryList.map(([category, repos], index) => (
         <Category name={category} repos={repos} index={index} key={category} />
       ))}
