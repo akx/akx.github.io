@@ -54,7 +54,7 @@ function formatUrl(url: string) {
   if (url.startsWith('https://github.com')) {
     return (
       <>
-        <img src={GitHubLogo.src} className="h-4 inline pe-1" />
+        <img src={GitHubLogo.src} alt="GitHub" className="h-4 inline pe-1" />
         {url.slice(19)}
       </>
     );

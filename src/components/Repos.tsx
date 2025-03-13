@@ -18,6 +18,46 @@ function slugifyCategoryName(name: string) {
   return name.toLowerCase().replaceAll(/\s+/g, '-');
 }
 
+function LanguageFilter({
+  languages,
+  setLanguageFilter,
+  languageFilter,
+}: {
+  languages: [string, number][];
+  setLanguageFilter: (lang: string | null) => void;
+  languageFilter: string | null;
+}) {
+  return (
+    <label htmlFor="language-filter">
+      Filter by language:{' '}
+      <span>
+        <label>
+          <input
+            name="language-filter"
+            checked={!languageFilter}
+            type="radio"
+            value=""
+            onChange={() => setLanguageFilter(null)}
+          />{' '}
+          All ({count})
+        </label>
+        {languages.map(([language, count]) => (
+          <label className="ps-2 inline-block whitespace-nowrap" key={language}>
+            <input
+              type="radio"
+              name="language-filter"
+              value={language}
+              checked={language === languageFilter}
+              onChange={(event) => setLanguageFilter(event.target.value || null)}
+            />{' '}
+            {language} ({count})
+          </label>
+        ))}
+      </span>
+    </label>
+  );
+}
+
 function Category({ name, repos, index }: CategoryProperties) {
   const { hex } = colors[index % colors.length];
   const byStatus = groupBy([...repos].reverse(), (s) => s.status || 'Sketch');
@@ -71,35 +111,18 @@ export default function Repos() {
     return filtered;
   }, [categories, languageFilter]);
 
-  const filter = languages.length > 0 && (
-    <div className="p-2 bg-white">
-      <label htmlFor="language-filter">
-        Filter by language:{' '}
-        <span>
-          <label>
-            <input name="language-filter" type="radio" value="" onChange={() => setLanguageFilter(null)} /> All ({count}
-            )
-          </label>
-          {languages.map(([language, count]) => (
-            <label className="ps-2 inline-block whitespace-nowrap">
-              <input
-                type="radio"
-                name="language-filter"
-                key={language}
-                value={language}
-                onChange={(event) => setLanguageFilter(event.target.value || null)}
-              />{' '}
-              {language} ({count})
-            </label>
-          ))}
-        </span>
-      </label>
-    </div>
-  );
   return (
     <>
       <div className="my-2 grid grid-cols-2 gap-2">
-        {filter}
+        {languages.length > 0 && (
+          <div className="p-2 bg-white">
+            <LanguageFilter
+              languages={languages}
+              setLanguageFilter={setLanguageFilter}
+              languageFilter={languageFilter}
+            />
+          </div>
+        )}
         <div className="p-2 bg-white">
           Skip to category:
           {categoryList.map(([category, repos]) => (
