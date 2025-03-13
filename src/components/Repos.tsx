@@ -102,13 +102,14 @@ export default function Repos() {
         {filter}
         <div className="p-2 bg-white">
           Skip to category:
-          {categoryList.map(([category]) => (
+          {categoryList.map(([category, repos]) => (
             <a
               href={`#${slugifyCategoryName(category)}`}
-              className="ps-2 inline-block underline whitespace-nowrap"
+              className="ps-2 inline-block whitespace-nowrap"
               key={category}
             >
-              {category}
+              <span className="underline">{category}</span>
+              <span className="ps-1 no-underline">({repos.length})</span>
             </a>
           ))}
         </div>
