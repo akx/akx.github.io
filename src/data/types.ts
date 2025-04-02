@@ -9,5 +9,6 @@ export interface Repository {
   download?: string;
   platform?: string;
   name: string;
+  archived?: boolean;
 }
 export type Empty = Record<string, never>;

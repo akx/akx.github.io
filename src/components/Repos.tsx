@@ -58,6 +58,16 @@ function LanguageFilter({
   );
 }
 
+function putArchivedLast(a: Repository, b: Repository) {
+  if (a.archived && !b.archived) {
+    return 1;
+  }
+  if (!a.archived && b.archived) {
+    return -1;
+  }
+  return a.name.localeCompare(b.name);
+}
+
 function Category({ name, repos, index }: CategoryProperties) {
   const { hex } = colors[index % colors.length];
   const byStatus = groupBy([...repos].reverse(), (s) => s.status || 'Sketch');
@@ -69,13 +79,13 @@ function Category({ name, repos, index }: CategoryProperties) {
       <h2 className="category-header p-2 text-center bg-black/80 text-2xl" style={{ color: hex }}>
         {name}
       </h2>
-      <div className="category-body p-2 flex flex-col gap-2">
+      <div className="category-body p-2 gap-2 grid-cols-2 lg:grid-cols-4 grid gap-2 justify-center">
         {statusesInOrder.map((status) => (
-          <div className="grid-cols-2 lg:grid-cols-4 grid gap-2 justify-center" key={status}>
-            {byStatus[status].map((repo) => (
+          <React.Fragment key={status}>
+            {[...byStatus[status]].sort(putArchivedLast).map((repo) => (
               <RepoCard key={repo.name} repo={repo} />
             ))}
-          </div>
+          </React.Fragment>
         ))}
       </div>
     </div>

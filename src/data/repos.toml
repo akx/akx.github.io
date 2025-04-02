@@ -39,6 +39,7 @@ language = "C"
 date = "2009-06-12"
 category = "Tools"
 status = "Release"
+archived = true
 
 [foamy]
 description = "Simpler SOAP for Python."
@@ -47,7 +48,7 @@ language = 'Python'
 date = '2012-09-07'
 category = 'Libraries'
 status = 'Incomplete'
-
+archived = true
 
 [Notifications]
 description = "Some libre notification sounds."
@@ -73,6 +74,7 @@ language = 'Python'
 date = '2013-05-14'
 category = 'Audio'
 status = 'Beta'
+archived = true
 
 [requiem]
 description = "Silliest Debian/Ubuntu provisioning toolkit"
@@ -80,7 +82,8 @@ url = 'https://github.com/akx/requiem'
 language = 'Python'
 date = '2013-09-06'
 category = 'Tools'
-status = 'Archived'
+status = 'Beta'
+archived = true
 
 [stateside]
 description = "Layer comps for HTML."
@@ -88,7 +91,8 @@ url = 'https://github.com/akx/stateside'
 language = 'JavaScript'
 date = '2013-10-21'
 category = 'Development'
-status = 'Archived'
+status = 'Beta'
+archived = true
 
 [spotify-tools]
 description = "Tools to convert and mangle Spotify/Last.fm/Youtube music playlists"
@@ -97,6 +101,7 @@ language = 'Python'
 date = '2014-01-12'
 category = 'Audio'
 status = 'Alpha'
+archived = true
 
 [hayes]
 
@@ -133,7 +138,7 @@ url = 'https://github.com/akx/arpy'
 homepage = 'https://akx.github.io/arpy/arpy.html'
 language = 'JavaScript'
 date = '2014-05-04'
-category = 'Audio'
+category = 'Audio Toys'
 status = 'Beta'
 
 [minigradient-js]
@@ -141,7 +146,7 @@ description = "Mini-library for gradient interpolation"
 url = 'https://github.com/akx/minigradient.js'
 language = 'JavaScript'
 date = '2014-05-15'
-category = 'Libraries'
+category = 'Graphics'
 status = 'Release'
 
 [ix]
@@ -158,7 +163,7 @@ description = "Object-oriented API for generating SVG path strings"
 url = 'https://github.com/akx/gravelly.js'
 language = 'JavaScript'
 date = '2014-07-16'
-category = 'Libraries'
+category = 'Graphics'
 status = 'Release'
 
 [git-kit]
@@ -191,7 +196,7 @@ homepage = 'https://akx.github.io/EFFTHATNOISE/'
 url = 'https://github.com/akx/EFFTHATNOISE'
 language = 'JavaScript'
 date = '2014-09-04'
-category = 'Audio'
+category = 'Audio Toys'
 status = 'Release'
 
 #[bk-suomi-menu]
@@ -209,7 +214,7 @@ homepage = 'https://akx.github.io/glitch2/'
 url = 'https://github.com/akx/glitch2'
 language = 'JavaScript'
 date = '2014-12-27'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Release'
 
 [picotable]
@@ -257,7 +262,7 @@ status = 'Beta'
 [band-stars]
 
 [license-grep]
-description = "Figure out licenses for the current Python/NPM/Bower environment"
+description = "Figure out licenses for the current Python/JavaScript/Dart/Rust environment"
 url = 'https://github.com/akx/license-grep'
 language = 'Python'
 date = '2015-06-02'
@@ -297,7 +302,7 @@ homepage = 'https://akx.github.io/maskin/'
 url = 'https://github.com/akx/maskin'
 language = 'JavaScript'
 date = '2015-07-14'
-category = 'Audio'
+category = 'Audio Toys'
 status = 'Release'
 
 [GRL-LaserTag]
@@ -338,7 +343,7 @@ homepage = 'https://akx.github.io/geoseq/'
 url = 'https://github.com/akx/geoseq'
 language = 'JavaScript'
 date = '2015-09-06'
-category = 'Audio'
+category = 'Audio Toys'
 status = 'Release'
 
 
@@ -382,7 +387,7 @@ download = 'https://github.com/akx/qta/releases/latest'
 language = 'C#'
 platform = "Windows"
 date = '2009-12'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Release'
 
 [cosmicdrone]
@@ -391,7 +396,7 @@ homepage = 'https://akx.github.io/cosmicdrone'
 url = 'https://github.com/akx/cosmicdrone'
 language = 'JavaScript'
 date = '2015-10-08'
-category = 'Audio'
+category = 'Audio Toys'
 status = 'Release'
 
 [reascale-js]
@@ -399,7 +404,7 @@ description = "Reads Reascale files, outputs JavaScript. Built as a dependency o
 url = 'https://github.com/akx/reascale-js'
 language = 'JavaScript'
 date = '2015-10-10'
-category = 'Audio'
+category = 'Audio Toys'
 status = 'Release'
 
 [chromon]
@@ -408,7 +413,7 @@ homepage = 'https://akx.github.io/chromon'
 url = 'https://github.com/akx/chromon'
 language = 'JavaScript'
 date = '2015-10-10'
-category = 'Audio'
+category = 'Audio Toys'
 status = 'Release'
 
 [islands]
@@ -416,7 +421,7 @@ description = "JavaScript island map generator (circa 2013)"
 url = 'https://github.com/akx/islands'
 language = 'JavaScript'
 date = '2013'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Release'
 
 [peep]
@@ -440,7 +445,7 @@ homepage = 'https://akx.github.io/mashed'
 url = 'https://github.com/akx/mashed'
 language = 'JavaScript'
 date = '2013'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Release'
 
 [circgen]
@@ -449,7 +454,7 @@ homepage = 'https://akx.github.io/circgen'
 url = 'https://github.com/akx/circgen'
 language = 'JavaScript'
 date = '2015-10-14'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Release'
 
 [lauo]
@@ -562,6 +567,7 @@ language = 'JavaScript'
 date = '2016-05-13'
 category = 'Tools'
 status = 'Release'
+archived = true
 
 [redwall]
 description = "Download wallpapers from Reddit"
@@ -593,6 +599,7 @@ url = 'https://github.com/akx/pizzeriat'
 language = 'Python'
 date = '2016-08-14'
 category = 'Data Science'
+archived = true
 
 [docker-mapnik]
 description = "Mapnik Docker container with Node and Python bindings"
@@ -601,6 +608,7 @@ language = 'Shell'
 date = '2016-08-22'
 category = 'Development'
 status = 'Beta'
+archived = true
 
 [mlog]
 
@@ -627,6 +635,7 @@ language = 'Python'
 date = '2016-09-16'
 category = 'Development'
 status = 'Beta'
+archived = true
 
 [pyttipannu]
 description = "Simple recipe aggregator project used for an internal training at Anders."
@@ -635,6 +644,7 @@ language = 'Python'
 date = '2016-09-23'
 category = 'Presentations'
 status = 'Archived'
+archived = true
 
 [my-video]
 description = "Dynamic kinetic typography video for Childish Gambino's Put It In My Video"
@@ -644,6 +654,7 @@ language = 'JavaScript'
 date = '2016-10-01'
 category = 'Graphics'
 status = 'Beta'
+archived = true
 
 [glmr]
 description = "Canvas trails/drawing hack."
@@ -651,7 +662,7 @@ homepage = 'https://akx.github.io/glmr/'
 url = 'https://github.com/akx/glmr'
 language = 'HTML'
 date = '2011-11'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Release'
 
 [tritri]
@@ -664,7 +675,7 @@ homepage = [
 url = 'https://github.com/akx/tritri'
 language = 'JavaScript'
 date = '2014-07'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Release'
 
 [runway]
@@ -704,12 +715,13 @@ category = 'Games'
 status = 'Release'
 
 [veryloudsite]
-description = "#radix_challenge hack for Junction 2016"
-url = 'https://github.com/akx/veryloudsite'
-language = 'CSS'
-date = '2016-11-26'
-category = 'Audio'
-status = 'Release'
+#description = "#radix_challenge hack for Junction 2016"
+#url = 'https://github.com/akx/veryloudsite'
+#language = 'CSS'
+#date = '2016-11-26'
+#category = 'Audio Toys'
+#status = 'Release'
+#archived = true
 
 [nodemuki]
 
@@ -776,6 +788,7 @@ language = 'Docker'
 date = '2017-04-18'
 category = 'Development'
 status = 'Beta'
+archived = true
 
 [rd]
 description = "Reddit downloader/video link detector"
@@ -818,8 +831,9 @@ description = "Stochastic sampling synthesizer from a friend's voice"
 url = 'https://akx.github.io/suppisyn/'
 language = 'JavaScript'
 date = '2017-05-26'
-category = 'Audio'
-status = 'Beta'
+category = 'Audio Toys'
+status = 'Sketch'
+archived = true
 
 [neat]
 description = "beta.eat.fi data visualizer (proof of concept that it doesn't have to be slow)"
@@ -844,6 +858,7 @@ language = 'JavaScript'
 date = '2017-06-06'
 category = 'Development'
 status = 'Release'
+archived = true
 
 [watercolour]
 description = "Watercolour generator"
@@ -851,7 +866,7 @@ url = 'https://github.com/akx/watercolour'
 homepage = 'https://akx.github.io/watercolour/'
 language = 'JavaScript'
 date = '2017-06-06'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Release'
 
 [s3-dupes]
@@ -869,6 +884,7 @@ language = 'C'
 date = '2005'
 category = 'Graphics'
 status = 'Release'
+archived = true
 
 [merge-sms-backup]
 description = "Tools to merge XML files generated by Carbonite SMS Backup and Restore into a deduplicated JSON file."
@@ -884,7 +900,7 @@ url = 'https://github.com/akx/ellip'
 homepage = 'https://akx.github.io/ellip/'
 language = 'JavaScript'
 date = '2017-07-12'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Release'
 
 [micro-style-loader]
@@ -894,6 +910,7 @@ language = 'JavaScript'
 date = '2017-07-18'
 category = 'Development'
 status = 'Release'
+archived = true
 
 [gentry]
 description = "A simple reimplementation of Sentry for low-traffic sites"
@@ -919,7 +936,7 @@ homepage = 'https://codepen.io/akx/full/wqeZLJ/'
 url = 'https://github.com/akx/fraktur'
 language = 'JavaScript'
 date = '2017-08-11'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Beta'
 
 [babel-i18n-test]
@@ -939,6 +956,7 @@ language = 'JavaScript'
 date = '2017-08-31'
 category = 'Cryptocurrencies'
 status = 'Alpha'
+archived = true
 
 [folichrome]
 description = "Chrome extension for Turku public transit (Föli)"
@@ -967,13 +985,14 @@ language = 'Python'
 date = '2017-09-12'
 category = 'Development'
 status = 'Beta'
+archived = true
 
 [geojson-vis]
 description = 'Quickly visualize a GeoJSON file'
 url = 'https://github.com/akx/geojson-vis'
 language = 'JavaScript'
 date = '2017-09-20'
-category = 'Tools'
+category = 'Geo Tools'
 status = 'Release'
 
 [webpack-remote-plugin-test]
@@ -1009,7 +1028,7 @@ description = "MAKE FATTO BIITOS. Sampler emulator on the web!"
 url = 'https://github.com/akx/fatto-biito'
 language = 'JavaScript'
 date = '2017-11-13'
-category = 'Audio'
+category = 'Audio Toys'
 status = 'Beta'
 
 [demxf]
@@ -1029,11 +1048,11 @@ category = 'Graphics'
 status = 'Alpha'
 
 [coinbot]
-url = 'https://github.com/akx/coinbot'
-language = 'JavaScript'
-date = '2017-11-29'
-category = 'Cryptocurrencies'
-status = 'Alpha'
+#url = 'https://github.com/akx/coinbot'
+#language = 'JavaScript'
+#date = '2017-11-29'
+#category = 'Cryptocurrencies'
+#status = 'Alpha'
 
 [advent-of-code-2017]
 
@@ -1044,6 +1063,7 @@ language = 'Python'
 date = '2017-12-05'
 category = 'Development'
 status = 'Release'
+archived = true
 
 [goligoi]
 description = "Niimbal grybdogoligoi! Keep track of your crypto holdings, with automatic value and position determination"
@@ -1067,8 +1087,9 @@ description = "A meta FM synth."
 url = 'https://github.com/akx/melu'
 language = 'JavaScript'
 date = '2017-12-17'
-category = 'Audio'
+category = 'Audio Toys'
 status = 'Beta'
+archived = true
 
 [kartool]
 description = "Tool for audio extraction from a car game with an Italian plumber"
@@ -1087,7 +1108,7 @@ category = 'Graphics'
 status = 'Release'
 
 [pls]
-description = "Sort, filter and export Spotify playlists"
+description = "Web interface to sort, filter and export Spotify playlists."
 homepage = 'https://akx.github.io/pls/'
 url = 'https://github.com/akx/pls'
 language = 'JavaScript'
@@ -1218,6 +1239,7 @@ language = 'Python'
 date = '2018-06-26'
 category = 'Data Science'
 status = 'Release'
+archived = true
 
 [ledbadger]
 description = "Tools for interacting with XANES X1 programmable LED bicycle taillights"
@@ -1297,6 +1319,7 @@ url = 'https://github.com/akx/suomen-pizzeriat-ja-kebulat'
 language = 'Python'
 date = '2018-08-22'
 category = 'Data Science'
+archived = true
 
 [autotypes]
 description = "Finds non-stub TypeScript @types/ packages for your package.json."
@@ -1363,6 +1386,7 @@ language = 'TypeScript'
 date = '2018-12-22'
 category = 'Home Automation'
 status = 'Release'
+archived = true
 
 [tm35fin]
 description = "JavaScript tools for converting to/from Finnish maps"
@@ -1397,12 +1421,12 @@ category = 'Presentations'
 status = 'Release'
 
 [mootate]
-description = "Mutate text á la \"All work and no play...\""
-url = 'https://github.com/akx/mootate'
-language = 'Python'
-date = '2019-06-06'
-category = 'Tools'
-status = 'Beta'
+#description = "Mutate text á la \"All work and no play...\""
+#url = 'https://github.com/akx/mootate'
+#language = 'Python'
+#date = '2019-06-06'
+#category = 'Tools'
+#status = 'Beta'
 
 [fdf]
 description = "Fast Duplicate Finder"
@@ -1429,12 +1453,12 @@ category = 'Data Science'
 status = 'Release'
 
 [m5-experiments]
-description = ""
-url = 'https://github.com/akx/m5-experiments'
-language = 'Shell'
-date = '2019-09-12'
-category = 'Embedded'
-status = 'Beta'
+#description = ""
+#url = 'https://github.com/akx/m5-experiments'
+#language = 'Shell'
+#date = '2019-09-12'
+#category = 'Embedded'
+#status = 'Beta'
 
 [small-drf-demo]
 
@@ -1502,7 +1526,7 @@ homepage = 'https://akx.github.io/ikuinen-webbikoodaus/'
 url = 'https://github.com/akx/ikuinen-webbikoodaus'
 language = 'TypeScript'
 date = '2020-01-13'
-category = 'Audio'
+category = 'Audio Toys'
 status = 'Release'
 
 [res-extract]
@@ -1538,6 +1562,7 @@ language = 'Python'
 date = '2020-03-10'
 category = 'Finance'
 status = 'Beta'
+archived = true
 
 [telegram-sticker-dl]
 description = "Download sticker packs from Telegram"
@@ -1626,6 +1651,7 @@ language = 'Python'
 date = '2012-04-24'
 category = 'Development'
 status = 'Alpha'
+archived = true
 
 [kohina]
 description = "An old C#/.NET/WinForms node-based graphics processor."
@@ -1708,7 +1734,7 @@ status = 'Release'
 description = "A Befunge-like esolang from 2005, implemented in Basic"
 url = 'https://github.com/akx/moo'
 language = 'QBasic'
-date = '2020-09-01'
+date = '2005'
 category = 'Development'
 status = 'Release'
 
@@ -1728,7 +1754,7 @@ url = 'https://github.com/akx/pipimi'
 language = 'Python'
 date = '2020-09-11'
 category = 'Development'
-status = 'Alpha'
+status = 'Deprecated'
 
 [hackathon_whjr-covid-calculator]
 
@@ -1810,7 +1836,7 @@ homepage = 'https://akx.github.io/spacefill/spacefill.html'
 url = 'https://github.com/akx/spacefill'
 language = 'HTML'
 date = '2012'
-category = 'Graphics'
+category = 'Graphics Toys'
 status = 'Release'
 
 [fixit-rewrite-asserts]
@@ -1867,6 +1893,7 @@ url = 'https://github.com/akx/slack-extrapolate'
 language = 'Python'
 date = '2021-02-18'
 category = 'Data Science'
+archived = true
 
 [hindex]
 description = "HTML indexer experiment"
@@ -1916,7 +1943,7 @@ homepage = 'https://akx.github.io/nessu/'
 url = 'https://github.com/akx/nessu'
 language = 'TypeScript'
 date = '2021-06-11'
-category = 'Tools'
+category = 'Games'
 
 [mappi]
 description = "A mapping function finder"
@@ -1952,6 +1979,7 @@ url = 'https://github.com/akx/cachemoney'
 language = 'Python'
 date = '2021-08-11'
 category = 'Tools'
+status = 'Beta'
 
 [wiz-colors]
 description = "Named colors from the WiZ Connected Android app."
@@ -1967,7 +1995,7 @@ homepage = 'https://akx.github.io/minsky-explorer/'
 url = 'https://github.com/akx/minsky-explorer'
 language = 'TypeScript'
 date = '2021-09-01'
-category = 'Graphics'
+category = 'Graphics Toys'
 
 [foruda]
 description = "File manipulation DSL"
@@ -1975,6 +2003,7 @@ url = 'https://github.com/akx/foruda'
 language = 'Python'
 date = '2021-09-13'
 category = 'Tools'
+archived = true
 
 [pkgdiff]
 description = "Generate a succinct diff between two archive files."
@@ -2013,7 +2042,7 @@ homepage = 'https://akx.github.io/tlfe-soundthing/'
 url = 'https://github.com/akx/tlfe-soundthing'
 language = 'TypeScript'
 date = '2021-11-24'
-category = 'Audio'
+category = 'Audio Toys'
 
 [aoc2021]
 
@@ -2030,6 +2059,7 @@ url = 'https://github.com/akx/setuppy2cfg'
 language = 'Python'
 date = '2021-12-21'
 category = 'Development'
+archived = true
 
 [kekkonen]
 description = "Minimal type-safe globalesque state for React"
@@ -2058,7 +2088,7 @@ homepage = 'https://akx.github.io/unifun/'
 url = 'https://github.com/akx/unifun'
 language = 'TypeScript'
 date = '2022-01-18'
-category = 'Tools'
+category = 'Toys'
 
 [aegg]
 description = "An äggregator"
@@ -2094,6 +2124,7 @@ url = 'https://github.com/akx/smontry'
 language = 'Python'
 date = '2022-03-24'
 category = 'Development'
+status = 'Release'
 
 [net-encodings]
 
@@ -2103,6 +2134,7 @@ url = 'https://github.com/akx/playwright-snapper'
 language = 'Python'
 date = '2022-05-20'
 category = 'Tools'
+archived = true
 
 [frittikeitin]
 description = "🎶 ➡️ 🥘 ➡️ 🗑"
@@ -2110,7 +2142,7 @@ homepage = 'https://akx.github.io/frittikeitin/'
 url = 'https://github.com/akx/frittikeitin'
 language = 'TypeScript'
 date = '2022-05-27'
-category = 'Audio'
+category = 'Audio Toys'
 
 [react-curved-input]
 description = "A small React component to turn any SVG path into a slider."
@@ -2119,6 +2151,7 @@ url = 'https://github.com/akx/react-curved-input'
 language = 'TypeScript'
 date = '2022-07-13'
 category = 'Development'
+status = 'Release'
 
 [-github]
 
@@ -2139,6 +2172,7 @@ url = 'https://github.com/akx/sanamanuli'
 language = 'TypeScript'
 date = '2022-01-04'
 category = 'Games'
+status = 'Release'
 
 [simaa]
 description = "A sima soundboard."
@@ -2146,7 +2180,7 @@ homepage = 'https://akx.github.io/simaa/'
 url = 'https://github.com/akx/simaa'
 language = 'TypeScript'
 date = '2022-04-27'
-category = 'Audio'
+category = 'Audio Toys'
 
 [lerppu]
 description = "Tracks storage device prices in Finnish web stores."
@@ -2171,7 +2205,7 @@ homepage = 'https://akx.github.io/svg-wave/'
 url = 'https://github.com/akx/svg-wave'
 language = 'TypeScript'
 date = '2022-10-04'
-category = 'Tools'
+category = 'Graphics'
 
 [sensirion-ble]
 description = "Parser for Sensirion BLE devices."
@@ -2179,6 +2213,7 @@ url = 'https://github.com/akx/sensirion-ble'
 language = 'Python'
 date = '2022-11-19'
 category = 'Home Automation'
+status = 'Release'
 
 [fadio]
 description = "Generate a frame-blended animation from a set of images"
@@ -2208,6 +2243,7 @@ url = 'https://github.com/akx/aioruuvigateway'
 language = 'Python'
 date = '2022-12-30'
 category = 'Home Automation'
+status = 'Release'
 
 [pyproject-migrator]
 description = "Convert setup.cfg, etc. to pyproject.toml files"
@@ -2215,6 +2251,7 @@ url = 'https://github.com/akx/pyproject-migrator'
 language = 'Python'
 date = '2023-01-17'
 category = 'Development'
+status = 'Release'
 
 [nurin]
 description = "Taasko se netti on nurin?"
@@ -2229,6 +2266,7 @@ url = 'https://github.com/akx/gha-tools'
 language = 'Python'
 date = '2023-02-14'
 category = 'Development'
+status = 'Release'
 
 [ruff-usage-aggregate]
 description = "ruff-usage-aggregate"
@@ -2247,7 +2285,7 @@ I used this to 3D print the whole world.
 url = 'https://github.com/akx/glorb'
 language = 'Python'
 date = '2023-03-27'
-category = 'Graphics'
+category = 'Geo Tools'
 status = "Release"
 
 [clinton]
@@ -2273,11 +2311,12 @@ date = '2023-05-16'
 category = 'Tools'
 
 [handi]
-description = "Turns your hands into a MIDI controller."
+description = "Turns your hands into a MIDI controller, using a camera and Google's Mediapipe"
 url = 'https://github.com/akx/handi'
 language = 'Python'
 date = '2023-05-23'
 category = 'Audio'
+status = 'Beta'
 
 [ruff-report]
 description = "Slice and dice your Ruff reports"
@@ -2286,6 +2325,7 @@ url = 'https://github.com/akx/ruff-report'
 language = 'TypeScript'
 date = '2023-06-13'
 category = 'Development'
+status = 'Release'
 
 [satamanosturi]
 description = "Moves Docker images"
@@ -2293,6 +2333,7 @@ url = 'https://github.com/akx/satamanosturi'
 language = 'Python'
 date = '2023-06-28'
 category = 'Development'
+status = 'Release'
 
 [honkshoo]
 description = "Honkshoo reads, converts and visualizes data from CPAP machines."
@@ -2307,7 +2348,8 @@ homepage = 'https://akx.github.io/hetkinen/'
 url = 'https://github.com/akx/hetkinen'
 language = 'TypeScript'
 date = '2023-08-24'
-category = 'Audio'
+category = 'Audio Toys'
+status = 'Release'
 
 [illuminatrix]
 description = "Fancy light schemes for your home"
@@ -2315,6 +2357,7 @@ url = 'https://github.com/akx/illuminatrix'
 language = 'TypeScript'
 date = '2023-08-30'
 category = 'Home Automation'
+status = 'Release'
 
 [torchsde-brownian]
 description = "Brownian motion generation code from torchsde version 0.2.5 as a standalone package"
@@ -2322,6 +2365,7 @@ url = 'https://github.com/akx/torchsde-brownian'
 language = 'Python'
 date = '2023-09-26'
 category = 'Libraries'
+archived = true
 
 [pylint-to-ruff]
 description = "introspect your Pylint configuration and figure out what Ruff rules to enable or disable"
@@ -2329,6 +2373,7 @@ url = 'https://github.com/akx/pylint-to-ruff'
 language = 'Python'
 date = '2023-09-26'
 category = 'Development'
+status = 'Release'
 
 [holey]
 description = "Generates speaker grille patterns."
@@ -2347,11 +2392,11 @@ date = '2023-10-10'
 category = 'Development'
 
 [lcm_test]
-description = "Quick and dirty Streamlit UI for Latent Consistency Models"
-url = 'https://github.com/akx/lcm_test'
-language = 'Python'
-date = '2023-10-24'
-category = 'Graphics'
+#description = "Quick and dirty Streamlit UI for Latent Consistency Models"
+#url = 'https://github.com/akx/lcm_test'
+#language = 'Python'
+#date = '2023-10-24'
+#category = 'Graphics'
 
 [openconnect-socks-proxy]
 description = "Dockerfile + Python start script to configure an openconnect + tunsocks SOCKS proxy."
@@ -2359,6 +2404,7 @@ url = 'https://github.com/akx/openconnect-socks-proxy'
 language = 'Python'
 date = '2023-11-23'
 category = 'Tools'
+status = 'Release'
 
 [res-helper]
 description = "Resolution helper for e.g. Stable Diffusion"
@@ -2401,6 +2447,7 @@ url = 'https://github.com/akx/sukkalaatikko'
 language = 'Python'
 date = '2023-05-30'
 category = 'Development'
+status = 'Release'
 
 [tska]
 description = "TypeScript utilities"
@@ -2424,7 +2471,7 @@ homepage = 'https://akx.github.io/geosplot/'
 url = 'https://github.com/akx/geosplot'
 language = 'TypeScript'
 date = '2024-09-05'
-category = 'Tools'
+category = 'Geo Tools'
 
 [hatch-calver]
 description = "CalVer versioning scheme for Hatch"
@@ -2433,6 +2480,7 @@ url = 'https://github.com/akx/hatch-calver'
 language = 'Python'
 date = '2024-09-16'
 category = 'Development'
+status = 'Release'
 
 [elb-log-transform]
 

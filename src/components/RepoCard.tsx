@@ -84,7 +84,7 @@ function MultiLink({ url, text }: { url: string | string[] | undefined; text: st
 }
 
 export default function RepoCard({ repo }: { repo: Repository }) {
-  const { date, description, download, homepage, language, name, platform, status: rawStatus, url } = repo;
+  const { date, description, download, homepage, language, name, archived, platform, status: rawStatus, url } = repo;
   const dateBadge = getDateBadge(date);
   const languageBadge = getLanguageBadge(language);
   const status = rawStatus || 'Sketch';
@@ -92,7 +92,7 @@ export default function RepoCard({ repo }: { repo: Repository }) {
     <div
       className={cx(
         'repo-card bg-white/65 border-b-black/65 border',
-        statusTiers[status] >= 900 ? 'opacity-50 hover:opacity-100' : null,
+        statusTiers[status] >= 900 || archived ? 'opacity-50 hover:opacity-100' : null,
       )}
       id={name.toLowerCase()}
     >
@@ -109,7 +109,10 @@ export default function RepoCard({ repo }: { repo: Repository }) {
         {status ? (
           <>
             <dt>Status</dt>
-            <dd>{status}</dd>
+            <dd>
+              {status}
+              {archived ? ' (Archived)' : null}
+            </dd>
           </>
         ) : null}
         {date ? (
