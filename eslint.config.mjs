@@ -16,9 +16,11 @@ export default [
   {
     rules: {
       'unicorn/filename-case': 'off',
+      'unicorn/no-array-callback-reference': 'off',
+      'unicorn/no-array-reverse': 'off',
+      'unicorn/no-array-sort': 'off',
       'unicorn/no-null': 'off',
       'unicorn/text-encoding-identifier-case': 'off',
-      'unicorn/no-array-callback-reference': 'off',
     },
   },
 ];
