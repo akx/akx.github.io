@@ -2544,3 +2544,120 @@ date = '2025-02-27'
 category = 'Libraries'
 status = 'Beta'
 
+[bk-suomi-menu]
+
+[nutritious]
+
+[homekit]
+
+[yle-kuntavaalit-2017-data]
+
+[kuntaliitto-scrape]
+
+[diffuso]
+description = "Paint diffusion experiment"
+homepage = 'https://akx.github.io/diffuso/'
+url = 'https://github.com/akx/diffuso'
+language = 'TypeScript'
+date = '2022-05-09'
+category = 'Graphics Toys'
+
+[baraoke]
+description = "Convert YouTube to karaoke with whisper.cpp & demucs"
+url = 'https://github.com/akx/baraoke'
+language = 'Python'
+date = '2023-10-14'
+category = 'Video Tools'
+
+[ivose-dj]
+
+[hissisi]
+description = "🛗 💡 (Toying with elevator-style pixel art)"
+homepage = 'https://akx.github.io/hissisi/'
+url = 'https://github.com/akx/hissisi'
+language = 'TypeScript'
+date = '2024-09-14'
+category = 'Graphics Toys'
+
+[hypermvp]
+
+[ghool]
+description = "A collection of tools to interact with GitHub in ways that are cumbersome via the UI"
+url = 'https://github.com/akx/ghool'
+language = 'Python'
+date = '2025-01-11'
+category = 'Development'
+
+[varjostin]
+description = "Desktop real-time GLSL fragment shader editor"
+url = 'https://github.com/akx/varjostin'
+language = 'GLSL'
+date = '2025-01-20'
+category = 'Graphics Toys'
+
+[decruft]
+description = "Eradicate build cruft directories!"
+url = 'https://github.com/akx/decruft'
+language = 'Rust'
+date = '2025-03-10'
+category = 'Development'
+
+[typtyp]
+description = "Generate TypeScript types from Python code"
+url = 'https://github.com/akx/typtyp'
+language = 'Python'
+date = '2025-03-26'
+category = 'Development'
+
+[toybox]
+description = "Various toys for the web."
+homepage = 'https://akx.github.io/toybox/'
+url = 'https://github.com/akx/toybox'
+language = 'TypeScript'
+date = '2025-03-28'
+category = 'Utilities'
+
+[react-icons-gen]
+description = "Subset react-icons to only include the icons you use in your project"
+url = 'https://github.com/akx/react-icons-gen'
+language = 'JavaScript'
+date = '2025-04-16'
+category = 'Development'
+
+[botocore-sign-perf]
+
+[squeeze]
+description = "Command-line image compressor tool"
+url = 'https://github.com/akx/squeeze'
+language = 'Rust'
+date = '2025-07-31'
+category = 'Graphics'
+
+[obscura-image]
+description = "Decode esoteric image formats in the browser using WebAssembly"
+url = 'https://github.com/akx/obscura-image'
+language = 'Rust'
+date = '2025-08-21'
+category = 'Graphics'
+
+[matcha]
+description = "Vibe-coded image patch matching web tool"
+homepage = 'https://akx.github.io/matcha/'
+url = 'https://github.com/akx/matcha'
+language = 'JavaScript'
+date = '2025-09-02'
+category = 'Graphics Toys'
+
+[wpget]
+description = "Download WordPress pages using the wp-json API"
+url = 'https://github.com/akx/wpget'
+language = 'Python'
+date = '2025-09-19'
+category = 'Utilities'
+
+[pesula]
+description = "Wash static watermarks off video"
+url = 'https://github.com/akx/pesula'
+language = 'Python'
+date = '2025-10-22'
+category = 'Video Tools'
