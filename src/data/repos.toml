@@ -2661,3 +2661,76 @@ url = 'https://github.com/akx/pesula'
 language = 'Python'
 date = '2025-10-22'
 category = 'Video Tools'
+
+[sienuri]
+description = "Finds mushrooms using GIS"
+url = 'https://github.com/akx/sienuri'
+language = 'Python'
+date = '2025-10-20'
+category = 'Geo Tools'
+
+[magic-mirror]
+description = "WebGL tool to mirror images along arbitrary axes"
+homepage = 'https://akx.github.io/magic-mirror/'
+url = 'https://github.com/akx/magic-mirror'
+language = 'HTML'
+date = '2026-01-09'
+category = 'Graphics Toys'
+
+[3d-printing]
+description = "My 3D Printing Source Files"
+url = 'https://github.com/akx/3d-printing'
+language = 'Python'
+date = '2026-01-22'
+category = '3D Printing'
+
+[swf-extract]
+description = "Extract assets from SWFs"
+url = 'https://github.com/akx/swf-extract'
+language = 'Rust'
+date = '2026-01-29'
+category = 'Reverse Engineering'
+
+[vaihde]
+description = "Git worktree manager"
+url = 'https://github.com/akx/vaihde'
+language = 'Python'
+date = '2026-01-30'
+category = 'Development'
+
+[cardinal-mcp]
+description = "Control the Cardinal modular synthesizer via MCP"
+url = 'https://github.com/akx/cardinal-mcp'
+language = 'Python'
+date = '2026-02-08'
+category = 'Audio'
+
+[extremelyfast]
+description = "EXT4remely fast read-only EXT4 filesystem structure reader"
+url = 'https://github.com/akx/extremelyfast'
+language = 'Rust'
+date = '2026-03-04'
+category = 'Tools'
+
+[centauri-carbon-tool]
+description = "Manage your Elegoo Centauri Carbon 3D printer over WLAN"
+url = 'https://github.com/akx/centauri-carbon-tool'
+language = 'Python'
+date = '2026-03-05'
+category = '3D Printing'
+
+[kimble]
+description = "Kimble simulator"
+url = 'https://github.com/akx/kimble'
+language = 'Rust'
+date = '2026-03-17'
+category = 'Games'
+
+[ufsextract]
+description = "Extract files from FreeBSD UFSv2 disk images"
+url = 'https://github.com/akx/ufsextract'
+language = 'Rust'
+date = '2026-03-25'
+category = 'Tools'
+
+
