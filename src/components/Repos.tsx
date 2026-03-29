@@ -3,10 +3,22 @@ import RepoCard from './RepoCard';
 import massageReposData from '../data/reposData';
 import colors from '../data/colors.json';
 import type { Repository } from '../data/types';
-import { groupBy, sortBy } from '../helpers.ts';
 import { statusTiers } from '../data/consts.ts';
 
 const { categories, count } = massageReposData();
+
+function slugifyCategoryName(name: string) {
+  return name.toLowerCase().replaceAll(/\s+/g, '-');
+}
+
+function putArchivedLast(a: Repository, b: Repository) {
+  const aTier = statusTiers[a.status || 'Sketch'] || 99;
+  const bTier = statusTiers[b.status || 'Sketch'] || 99;
+  if (aTier !== bTier) return aTier - bTier;
+  if (a.archived && !b.archived) return 1;
+  if (!a.archived && b.archived) return -1;
+  return a.name.localeCompare(b.name);
+}
 
 interface CategoryProperties {
   name: string;
@@ -14,78 +26,23 @@ interface CategoryProperties {
   index: number;
 }
 
-function slugifyCategoryName(name: string) {
-  return name.toLowerCase().replaceAll(/\s+/g, '-');
-}
-
-function LanguageFilter({
-  languages,
-  setLanguageFilter,
-  languageFilter,
-}: {
-  languages: [string, number][];
-  setLanguageFilter: (lang: string | null) => void;
-  languageFilter: string | null;
-}) {
-  return (
-    <label htmlFor="language-filter">
-      Filter by language:{' '}
-      <span>
-        <label>
-          <input
-            name="language-filter"
-            checked={!languageFilter}
-            type="radio"
-            value=""
-            onChange={() => setLanguageFilter(null)}
-          />{' '}
-          All ({count})
-        </label>
-        {languages.map(([language, count]) => (
-          <label className="ps-2 inline-block whitespace-nowrap" key={language}>
-            <input
-              type="radio"
-              name="language-filter"
-              value={language}
-              checked={language === languageFilter}
-              onChange={(event) => setLanguageFilter(event.target.value || null)}
-            />{' '}
-            {language} ({count})
-          </label>
-        ))}
-      </span>
-    </label>
-  );
-}
-
-function putArchivedLast(a: Repository, b: Repository) {
-  if (a.archived && !b.archived) {
-    return 1;
-  }
-  if (!a.archived && b.archived) {
-    return -1;
-  }
-  return a.name.localeCompare(b.name);
-}
-
 function Category({ name, repos, index }: CategoryProperties) {
   const { hex } = colors[index % colors.length];
-  const byStatus = groupBy([...repos].reverse(), (s) => s.status || 'Sketch');
-  const statusesInOrder = sortBy(Object.keys(byStatus), (s) => statusTiers[s] || 99);
-
+  const sorted = [...repos].sort(putArchivedLast);
   const slugified = slugifyCategoryName(name);
+
   return (
-    <div className="category" style={{ background: hex }} id={slugified}>
-      <h2 className="category-header p-2 text-center bg-black/80 text-2xl" style={{ color: hex }}>
+    <div className="category" id={slugified}>
+      <div
+        className="category-label px-2 py-0.5 text-sm font-bold tracking-wide uppercase"
+        style={{ background: hex, color: 'rgba(0,0,0,0.7)' }}
+      >
         {name}
-      </h2>
-      <div className="category-body p-2 gap-2 grid-cols-2 lg:grid-cols-4 grid gap-2 justify-center">
-        {statusesInOrder.map((status) => (
-          <React.Fragment key={status}>
-            {[...byStatus[status]].sort(putArchivedLast).map((repo) => (
-              <RepoCard key={repo.name} repo={repo} />
-            ))}
-          </React.Fragment>
+        <span className="font-normal opacity-60 ml-1">({repos.length})</span>
+      </div>
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(12rem,1fr))]" style={{ borderLeft: `3px solid ${hex}` }}>
+        {sorted.map((repo) => (
+          <RepoCard key={repo.name} repo={repo} color={hex} />
         ))}
       </div>
     </div>
@@ -123,29 +80,47 @@ export default function Repos() {
 
   return (
     <>
-      <div className="my-2 grid grid-cols-2 gap-2">
-        {languages.length > 0 && (
-          <div className="p-2 bg-white">
-            <LanguageFilter
-              languages={languages}
-              setLanguageFilter={setLanguageFilter}
-              languageFilter={languageFilter}
-            />
-          </div>
-        )}
-        <div className="p-2 bg-white">
-          Skip to category:
-          {categoryList.map(([category, repos]) => (
-            <a
-              href={`#${slugifyCategoryName(category)}`}
-              className="ps-2 inline-block whitespace-nowrap"
-              key={category}
+      <div className="my-2 flex flex-wrap gap-2 items-start">
+        <div className="p-2 bg-white/80 border border-black/10">
+          <span className="font-bold">{count}</span> projects
+          {' · '}
+          <span className="font-bold">{languages.length}</span> languages
+          {languageFilter ? (
+            <>
+              {' · '}
+              <button className="underline" onClick={() => setLanguageFilter(null)}>
+                clear filter
+              </button>
+            </>
+          ) : null}
+        </div>
+        <div className="p-2 bg-white/80 border border-black/10 flex flex-wrap gap-x-1 gap-y-0">
+          {languages.map(([language, langCount]) => (
+            <button
+              key={language}
+              className={`px-1 hover:bg-black/10 transition-colors ${languageFilter === language ? 'bg-black text-white' : ''}`}
+              onClick={() => setLanguageFilter(languageFilter === language ? null : language)}
             >
-              <span className="underline">{category}</span>
-              <span className="ps-1 no-underline">({repos.length})</span>
-            </a>
+              {language}
+              <span className="opacity-50 ml-0.5">{langCount}</span>
+            </button>
           ))}
         </div>
+      </div>
+      <div className="flex flex-wrap gap-2 mb-2">
+        {categoryList.map(([category], index) => {
+          const { hex } = colors[index % colors.length];
+          return (
+            <a
+              href={`#${slugifyCategoryName(category)}`}
+              key={category}
+              className="px-1 text-black/70 hover:text-black transition-colors"
+              style={{ background: hex, color: 'rgba(0,0,0,0.7)' }}
+            >
+              {category}
+            </a>
+          );
+        })}
       </div>
       {categoryList.map(([category, repos], index) => (
         <Category name={category} repos={repos} index={index} key={category} />

@@ -19,6 +19,7 @@ export default [
       'unicorn/no-array-callback-reference': 'off',
       'unicorn/no-array-reverse': 'off',
       'unicorn/no-array-sort': 'off',
+      'unicorn/no-nested-ternary': 'off',
       'unicorn/no-null': 'off',
       'unicorn/text-encoding-identifier-case': 'off',
     },
